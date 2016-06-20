@@ -515,7 +515,7 @@ if(false){
 					oTD.appendChild( DomObj[0] );
 						// Create an anchor element.
 						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.demon.nl/policies/");
+						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/");
 							DomObj[1] = document.createTextNode("Policies");
 						DomObj[0].appendChild( DomObj[1] );
 					oTD.appendChild( DomObj[0] );
@@ -523,7 +523,7 @@ if(false){
 					oTD.appendChild( DomObj[0] );
 						// Create an anchor element.
 						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.demon.nl/policies/#disclaimer");
+						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/#disclaimer");
 							DomObj[1] = document.createTextNode("Disclaimer");
 						DomObj[0].appendChild( DomObj[1] );
 					oTD.appendChild( DomObj[0] );
@@ -605,10 +605,10 @@ if(false){
 					else		oTD = oTR.insertCell(-1);
 						// Create an anchor element.
 						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.demon.nl/policies/#rating");
+						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/#rating");
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif");
+							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/ICRA/en_aw_88x31.gif");
 							DomObj[1].setAttribute("alt", "[ RSACi ]");
 							DomObj[1].setAttribute("title", "[ RSACi ]");
 							DomObj[1].setAttribute("align", "middle");
@@ -623,7 +623,7 @@ if(false){
 						DomObj[0].appendChild( oBR.cloneNode(false) );
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.demon.nl/policies/SafeSurf/ssurf.gif");
+							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/SafeSurf/ssurf.gif");
 							DomObj[1].setAttribute("alt", "[ SafeSurf ]");
 							DomObj[1].setAttribute("title", "[ SafeSurf ]");
 							DomObj[1].setAttribute("align", "middle");
@@ -638,7 +638,7 @@ if(false){
 						DomObj[0].appendChild( oBR.cloneNode(false) );
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif");
+							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/WebUrbia/WebUrbia-0a.gif");
 							DomObj[1].setAttribute("alt", "[ Safe For Kids ]");
 							DomObj[1].setAttribute("title", "[ Safe For Kids ]");
 							DomObj[1].setAttribute("align", "middle");
@@ -1569,7 +1569,7 @@ function genMarkName(oDom, oMark){
 	try{
 		// Create BR element.
 		oBR = document.createElement("br");
-	
+
 		// Split Marktype.
 		aMarkType = oMark.type.split('|');
 		// Split Markname.
@@ -1637,7 +1637,7 @@ function genMarkDesc(oDom, oMark){
 		oBR = document.createElement("br");
 		// A Horizontal Line.
 		oHR = document.createElement("hr");
-	
+
 		// Split Marktype.
 		aMarkType = oMark.type.split('|');
 		// Split Markname.
