@@ -1,0 +1,7 @@
+# HTML files
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-html.log
+
+url = "fans.freeworldonline.com/trimoon/{index.html,Styles.css,about.html,DB.html,manual.html,statcalc.html,fw_statcalc.js}"
+output = "web/#1"

@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	><head
+		><meta http-equiv="content-type" content="text/html; charset=utf-8"
+		/><meta http-equiv="content-script-type" content="text/javascript"
+		/><meta http-equiv="content-style-type" content="text/css"
+		/><meta http-equiv="imagetoolbar" content="false"
+		/><meta name="author" content="Tri_Moon &lt;tripple_moon_3m@yahoo.com&gt;"
+		/><meta name="copyright" content="(C)2004 TriMoon Inc."
+		/><meta name="publisher" content="TriMoon Inc."
+		/><meta name="generator" content="Macromedia HomeSite 5.0"
+		/><meta name="distribution" content="Global"
+		/><meta name="description" content="FreeWorld DataBase Script manual."
+		/><meta name="keywords" content="TriMoon Inc., FreeWorld, DataBase, Script manual"
+		/><meta name="robots"	content="INDEX,FOLLOW"
+		/><link rel="icon" type="image/x-icon" href="images/Tri-Moon.ico"
+		/><link rel="shortcut icon" type="image/x-icon" href="images/Tri-Moon.ico"
+		/><link rel="stylesheet" type="text/css" href="css/Styles_DB.css"
+		/><title>TriMoon Inc. | Games | FreeWorld DataBase | Script manual.</title>
+	</head
+	><body>
+		<div class="docdiv" align="center">
+			<span class="heading">Manual for SolarSystem Application:</span><br />
+			Last updated: 2005/1/26 15:40 +0100
+		</div><br />
+		<div class="docdiv">
+			<a name="toc" class="heading">Table Of Contentents:</a><ol>
+				<li><a href="#into"><span class="heading">Introduction</span></a>.
+					<ol type="i">
+						<li><a href="#i1">Why this manual</a>.</li>
+						<li><a href="#i2">Purpose of this manual</a>.</li>
+						<li><a href="#i3">Typefaces and colors used in this manual</a>.</li>
+					</ol>
+				</li>
+				<li><a href="#HowTo"><span class="heading">How To</span></a>&acute;s.
+					<ol type="1">
+						<li><a href="#ht1"><span class="howto">How does the de-centralisation of the information work?</span></a></li>
+						<li><a href="#ht2"><span class="howto">How do I create a JavaScript file?</span></a></li>
+						<li><a href="#ht3"><span class="howto">How do I add a planet?</span></a></li>
+						<li><a href="#ht4"><span class="howto">How do I add a map to a specific planet?</span></a></li>
+						<li><a href="#ht5"><span class="howto">How do I add a mark to a specific map?</span></a></li>
+						<li><a href="#ht6"><span class="howto">How do I use the Local-File feature?</span></a></li>
+						<li><a href="#ht7"><span class="howto">My browser does not allow local file linking from a online webpage, what now?.</span></a></li>
+					</ol>
+				</li>
+				<li><a href="#ApplicationObjects"><span class="heading">Application objects explained</span></a>.
+					<ol type="i">
+						<li><a href="#ao1"><span class="object">MarkTypes</span></a> object
+							<ul>
+								<li><a href="#ao1m">Methods</a></li>
+								<li><a href="#ao1pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao2"><span class="object">Mark</span></a> object
+							<ul>
+								<li><a href="#ao2pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao3"><span class="object">ItemType</span></a> object
+							<ul>
+								<li><a href="#ao3m">Methods</a></li>
+								<li><a href="#ao3pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao4"><span class="object">Items</span></a> object
+							<ul>
+								<li><a href="#ao4m">Methods</a></li>
+								<li><a href="#ao4pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao5"><span class="object">MonsterType</span></a> object
+							<ul>
+								<li><a href="#ao5m">Methods</a></li>
+								<li><a href="#ao5pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao6"><span class="object">Monsters</span></a> object
+							<ul>
+								<li><a href="#ao6m">Methods</a></li>
+								<li><a href="#ao6pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao7"><span class="object">NPCType</span></a> object
+							<ul>
+								<li><a href="#ao7m">Methods</a></li>
+								<li><a href="#ao7pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao8"><span class="object">NPCs</span></a> object
+							<ul>
+								<li><a href="#ao8m">Methods</a></li>
+								<li><a href="#ao8pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao9"><span class="object">Universe</span></a> object
+							<ul>
+								<li><a href="#ao9m">Methods</a></li>
+								<li><a href="#ao9pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao10"><span class="object">Planet</span></a> object
+							<ul>
+								<li><a href="#ao10m">Methods</a></li>
+								<li><a href="#ao10pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao11"><span class="object">Map</span></a> object
+							<ul>
+								<li><a href="#ao11m">Methods</a></li>
+								<li><a href="#ao11pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao12"><span class="object">ImageMapArea</span></a> object
+							<ul>
+								<li><a href="#ao12pv">Public variables</a></li>
+							</ul>
+						</li>
+						<li><a href="#ao13"><span class="object">ControlCenter</span></a> object
+							<ul>
+								<li><a href="#ao13m">Methods</a></li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li><a href="#ScriptParts"><span class="heading">Overview of Script Parts</span></a>.
+					<ol type="i">
+						<li><a href="#sp1"><span class="filename">LoadScripts.js</span></a></li>
+						<li><a href="#sp2"><span class="filename">SolarSystem.js</span></a></li>
+						<li><a href="#sp3"><span class="filename">TestBrowser.js</span></a></li>
+						<li><a href="#sp4"><span class="filename">ClassLib.js</span></a></li>
+						<li><a href="#sp5"><span class="filename">Support.js</span></a></li>
+						<li><a href="#sp6"><span class="filename">DHTML.js</span></a></li>
+						<li><a href="#sp7"><span class="filename">MarkTypes.js</span></a></li>
+						<li><a href="#sp8"><span class="filename">Planets.js</span></a></li>
+						<li><a href="#sp9"><span class="filename">Maps xxxx.js</span></a></li>
+						<li><a href="#sp10"><span class="filename">Marks xxxx.js</span></a></li>
+						<li><a href="#sp11"><span class="filename">Items.js</span></a></li>
+						<li><a href="#sp12"><span class="filename">Items xxxx.js</span></a></li>
+						<li><a href="#sp13"><span class="filename">Monsters.js</span></a></li>
+						<li><a href="#sp14"><span class="filename">Monsters xxxx.js</span></a></li>
+						<li><a href="#sp15"><span class="filename">NPCs.js</span></a></li>
+						<li><a href="#sp16"><span class="filename">NPCs xxxx.js</span></a></li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<hr/>
+		<div class="docdiv">
+			<a name="into" class="heading">Introduction:</a> <a href="#toc">&rArr; Back to T.O.C.</a><br />
+			<br />
+			I started to write this application on <strong><em>Thu Oct 28, 2004 10:39 +0200</em></strong> and announced it in
+			<a href="http://forum.freeworldonline.com/viewtopic.php?t=4996">this forum thread</a>.<br />
+			I publish this document and the application both under this <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons License</a>,
+			and need not inform that unautorized usage will be persued acoardingly to full extend of legal possibilities...
+			<ol type="i">
+				<li><a name="i1"><strong>Why this manual?</strong></a><br />
+					I am writing this manual not only for my self, for later "look-back",
+					but also for other people who are interested in contributing to the information this script provides.
+				</li>
+				<li><a name="i2"><strong>Purpose of this manual.</strong></a><br />
+					I will try to explain which commands are available and how to use them properly.<br />
+					This will allow de-centralisation of the information provided by this script.<br />
+					That means that other people can write script-parts that can be included on this site or linked to the contributers own website(s).
+				</li>
+				<li><a name="i3"><strong>Typefaces and colors used in this manual.</strong></a><br />
+					<span class="heading">Manual chapters are displayed in this visual.</span><br />
+					<span class="howto">How to questions are displayed in this visual.</span><br />
+					<span class="filename">Filenames and parts that can be used in filenames are displayed in this visual.</span><br />
+					<span class="object">JavaScript Objects are displayed in this visual.</span><br />
+					<span class="function">JavaScript Functions are displayed in this visual.</span><br />
+					<span class="variable">JavaScript Variables are displayed in this visual.</span><br />
+					<strong><em>Constants are displayed in this visual.</em></strong><br />
+					<code>Actual code fragments are displayed in this visual.</code>
+				</li>
+			</ol>
+		</div>
+		<br /><div class="docdiv">
+			<a name="HowTo" class="heading">How To&acute;s:</a> <a href="#toc">&rArr; Back to T.O.C.</a><br />
+			<br />
+			In this section i will try to answer some comon questions people could have.
+			<ol type="1">
+				<li><a name="ht1"><span class="howto">How does the de-centralisation of the information work?</span></a><br />
+					It works like this:<br />
+					By creating a JavaScript file and storing it on your own computers hard-drive then telling the application to process that script file in its execution.<br />
+					This way, you are able to write script commands that the application will use without modifying the actual application files.<br />
+					The application will process this local file as if it was part of the application,
+					without the need to change any code in any file of the application or the need to upload the local file to the website the application is on.<br />
+					Only you are able to see the effects of this localfile because only you have it, its on your computer and is not shared with other people.
+				</li>
+				<li><a name="ht2"><span class="howto">How do I create a JavaScript file?</span></a><br />
+					You can create a JavaScript file using any ASCII editor but when you save the text file give it a file-extension of "<span class="filename">.js</span>".<br />
+					In JavaScript files you can have comments also.<br />
+					Single line comments start with a double-slash <strong><em>//</em></strong> and span until the end of line.<br />
+					Multi line comments start with a slash-star <strong><em>/*</em></strong> and span until a star-slash <strong><em>*/</em></strong> is encountered.<br />
+					For example:<br />
+					Useing M$&acute;s <strong><em>Notepad</em></strong> you can create a textfile and save it as "<span class="filename">MyFile.js</span>"<br />
+					<strong>Notes:</strong>
+					<ol type="i">
+						<li>M$&acute;s <strong><em>Wordpad</em></strong> is <strong>NOT</strong> the same application.</li>
+						<li>When you dont see file extensions first enable it, or the file gets an automatic "<span class="filename">.txt</span>" as extension extra appended !</li>
+					</ol>
+				</li>
+				<li><a name="ht3"><span class="howto">How do I add a planet?</span></a><br />
+					You can do this useing a single line like:<br />
+					<code>Universe.add( new Planet("Seregor", 6) );</code><br />
+					This adds a planet with <strong><em>Seregor</em></strong> as name and tells the application to display <strong><em>6</em></strong> minimaps per line on planet view mode.
+				</li>
+				<li><a name="ht4"><span class="howto">How do I add a map to a specific planet?</span></a><br />
+					You can do this useing a single line like:<br />
+					<code>Universe.planet("Seregor").add( new Map("Liyon Valley", 5120,5120, "Seregor_3_4") );</code><br />
+					This will add a map named <strong><em>Liyon Valley</em></strong> to a planet named <strong><em>Seregor</em></strong>.<br />
+					It sets the mapsize to be <strong><em>5120px</em></strong> width and <strong><em>5120px</em></strong> high.<br />
+					And uses <span class="filename">map_Seregor_3_4.png</span> as mapimage in detailed view.<br />
+					And uses <span class="filename">map_Seregor_3_4_small.png</span> as mapimage in planet view.
+				</li>
+				<li><a name="ht5"><span class="howto">How do I add a mark to a specific map?</span></a><br />
+					You can do this useing a single line like:<br />
+					<code>Universe.planet("Seregor").map("Liyon Valley").add( new Mark("Map|Portal|Planet", 1181, 544, "WorldPortal", "To Glandatoo:Lilaci City") );</code><br />
+					This will add a mark named <strong><em>WorldPortal</em></strong> to a map named <strong><em>Liyon Valley</em></strong> on a planet named <strong><em>Seregor</em></strong>.<br />
+					It sets the marks description to be <strong><em>To Glandatoo:Lilaci City</em></strong>.<br />
+					And also sets the marks position to be <strong><em>1181px</em></strong> horizontal and <strong><em>544px</em></strong> vertical relative to the lower-left corner of the map.<br />
+					Furthermore it sets the mark to be one of the default marktypes <strong><em>Map|Portal|Planet</em></strong>,
+					which automaticaly assigns an image to the mark and sets its zoom levels for display or hide.<br />
+					<strong>Notes:</strong>
+					<ol type="i">
+						<li>For a overview of available selectors browse the application using "<strong><em>MarkTypes</em></strong>" as an argument in the search string of the URL.<br />
+							Example: <span class="filename">?MarkTypes</span> or simply click <a href="index.html?CC&amp;MarkTypes">here</a>.
+						</li>
+						<li>If there are other search string arguments already present just append "<strong><em>&amp;MarkTypes</em></strong>" to the search string of the URL.<br />
+							The "<strong><em>&amp;</em></strong>" is used to seperate arguments in search strings...
+						</li>
+					</ol>
+				</li>
+				<li><a name="ht6"><span class="howto">How do I use the Local-File feature?</span></a><br />
+					You can use this feature by following these steps.<br />
+					<ol type="i">
+						<li>Use the info in the preceeding How-To questions.</li>
+						<li>Right click <a href="js/marks/Marks.js">this link</a> and choose "Save Target As" or "Save Link As" depending on your browser.<br />
+							And save the file as "<span class="filename">C:/Marks.js</span>".
+						</li>
+						<li>Modify / Edit the file you just saved to your needs.<br />
+							It is only a template, to get you started with comments.<br />
+							You can/should edit the, commented, text after "Planet:", "Map:" and "Contributed by:".<br />
+							This is to let me and others know what the file&acute;s purpose is and who you are, when you finaly decide to submit it to me for inclusion on the website.
+						</li>
+						<li>Navigate the map page using "<strong><em>LocalFile</em></strong>" as an argument in the search string of the URL.<br />
+							<strong>Notes:</strong>
+							<ul>
+								<li>If there are other search string arguments already present just append "<strong><em>&amp;LocalFile</em></strong>" to the search string of the URL.<br />
+									The "<strong><em>&amp;</em></strong>" is used to seperate arguments in search strings...
+								</li>
+							</ul>
+						</li>
+						<li>If your browser&acute;s security does not allow local file linking from a online webpage then see the next HOW-To on how to bypass this.</li>
+					</ol>
+				</li>
+				<li><a name="ht7"><span class="howto">My browser does not allow local file linking from a online webpage, what now?.</span></a><br />
+					This is someting you should be greatfull about, as it is a security problem under normal circumstances.<br />
+					However incase of this application there is nothing to worry about because you are in control what is being executed in this localfile.<br />
+					Ok so how do we bypass this security block? Well its rather simple and logical.<br />
+					All we need to do is start the application from a local webpage file by following these simple steps.<br />
+					<ol type="i">
+						<li>Right click <a href="DB-local.html">this link</a> and choose "Save Target As" or "Save Link As" depending on your browser.</li>
+						<li>Save the file on your local hard drive, anywhere you like.<br />
+							I suggest one of two locations for easy finding:
+							<ul>
+								<li>Your Desktop</li>
+								<li>The root of your (first) Hard drive. eg: "<span class="filename">C:/</span>".</li>
+							</ul>
+						</li>
+						<li>Use the file you just saved to start the application from now on instead of the online URL.<br />
+							This will make your browser accept local file linking because the page is stored localy also.<br />
+							Although the rest of the application is still fetched online, it does not bother your browsers security.
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<br /><div class="docdiv">
+			<a name="ApplicationObjects" class="heading">Application objects explained:</a> <a href="#toc">&rArr; Back to T.O.C.</a><br />
+			<br />
+			There are a couple of methods this applicaton provides for use, which are all defined in <a href="#sp4"><span class="filename">ClassLib.js</span></a>.
+			<ol type="i">
+				<li><a name="ao1"><span class="object">MarkTypes</span></a> object<br />
+					This object is the instance of the <span class="object">MarkType</span> object-class and holds all default mark-types.<br />
+					It is a non-linear multi-dimensional array kindof type,
+						meaning sub-dimensions can all have individual number of elements that can differ from other dimensions at that level.<br />
+					Thus to traverse all elements in all dimensions you need to use recursion and follow each dimension to its end.<br />
+					It should <strong>not</strong> be used standalone except in <a href="#sp7"><span class="filename">MarkTypes.js</span></a>.<br />
+					You initialize it by using:<br />
+					<code><span class="object">MarkTypes</span> = new <span class="object">MarkType(</span>"MarkTypes"<span class="object">)</span>;</code><br />
+					This initializes the main <span class="object">MarkTypes</span> object and gives it a name of <strong>"MarkTypes"</strong>.<br />
+					Provides:<br />
+					<a name="ao1m"><strong>Methods:</strong></a>
+					<ul>
+						<li><span class="function">add(</span><span class="variable">sName</span>, <span class="variable">sImg</span><span class="function">, <span class="variable">nMinZoom</span>, <span class="variable">nMaxZoom</span>)</span><br />
+							Adds a new <a href="#ao1"><span class="object">MarkType</span></a> object to its subdimension.<br />
+							And sets its (Selector)name to the string <span class="variable">sName</span> or <strong>"UnKnown"</strong> if none was supplied.<br />
+							And uses <span class="variable">sImg</span> as its image. Can be some text or full URL.<br />
+							If <span class="variable">sImg</span> was not supplied, <span class="variable">noMark</span> will be used.<br />
+							If <span class="variable">sImg</span> was supplied as a non-filename/URL then it will be composed by prepending "<span class="filename">MT_</span>" and appending "<span class="filename">.png</span>" to <span class="variable">sImg</span>.<br />
+							Use the <span class="object">img</span>.<span class="variable">src</span> variable to fetch the actual filename/URL.<br />
+							Thus in case <span class="variable">sImg</span> was not supplied the actual filename/URL will be: <span class="filename">MT_noMark.png</span> (<span class="variable">noMark</span> defaults to "<span class="filename">noMark</span>")<br />
+							<span class="variable">nMinZoom</span>and <span class="variable">nMaxZoom</span> Are the Min/Max Zoom level allowed to show mark on map.
+						</li>
+						<li><span class="function">get(</span><span class="variable">nInd</span><span class="function">)</span><br />
+							Returns the <span class="object">MarkType</span> object with index# <span class="variable">nInd</span> from its immidiate subdemension.<br />
+							If <span class="variable">nInd</span> was not supplied it returns the last <span class="object">MarkType</span> object added to this object&acute;s immidiate subdemension.
+						</li>
+					</ul><br />
+					<a name="ao1pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="variable">name</span> = String containing the selector name for the marktype or <strong>"UnKnown"</strong> if none was suplied.</li>
+						<li><span class="variable">length</span> = Total length of sub-types Array that is being hold in <span class="object">Obj</span>.<br />
+							This is done for convienience in traversals.
+						</li>
+						<li>
+							<span class="variable">minZoom</span>,
+							<span class="variable">maxZoom</span>
+							= Min/Max Zoom level allowed to show mark on map. (<strong><em>-1</em></strong> being minimap zoomlevel.)
+						</li>
+						<li><span class="object">Obj</span>
+							= A Javascript <span class="object">Array()</span> object holding al subtypes consisting of <a href="#ao1"><span class="object">MarkType</span></a> object&acute;s.
+						</li>
+						<li><span class="object">img</span>
+							= A Javascript <span class="object">Image()</span> object holding the image to use representing this marktype.</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao2"><span class="object">Mark</span></a> object<br />
+					This object holds everything about a mark.<br />
+					You create one by using one of these lines:<br />
+					<code>
+						new <span class="object">Mark(</span><span class="variable">sType</span>, <span class="variable">nX</span>, <span class="variable">nY</span><span class="object">)</span><br />
+						new <span class="object">Mark(</span><span class="variable">sType</span>, <span class="variable">nX</span>, <span class="variable">nY</span>, <span class="variable">sName</span><span class="object">)</span><br />
+						new <span class="object">Mark(</span><span class="variable">sType</span>, <span class="variable">nX</span>, <span class="variable">nY</span>, <span class="variable">sName</span>, <span class="variable">sDesc</span><span class="object">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sType</span>
+							= Map Image. Can be some text or full URL/filename.<br />
+							If supplied as non-URL/filename then it should be composed of selectors into the main <a href="#ao1"><span class="object">MarkTypes</span></a> object.<br />
+							When using more as one selector then you should seperate them using a vertical dash, '<strong><em>|</em></strong>'. Examples:<br />
+							<code>
+								"NPC"<br />
+								"NPC|Quest"<br />
+								"Map|Building|WaterPut"
+							</code><br />
+							For a overview of available selectors browse the application using "<strong><em>MarkTypes</em></strong>" as an argument in the search string of the URL.
+						</li>
+						<li><span class="variable">nX</span> = Horizontal position in pixels in the map. (0 = left edge)</li>
+						<li><span class="variable">nY</span> = Vertical position in pixels in the map. (0 = bottom edge)</li>
+						<li><span class="variable">sName</span>
+							= Optional but reccomended.<br />
+							String with this <span class="object">Mark</span>&acute;s name.
+						</li>
+						<li><span class="variable">sDesc</span>
+							= Optional but reccomended.<br />
+							String explaining what this <span class="object">Mark</span> does or is for.<br />
+							Can hold HTML tags.
+						</li>
+					</ul>
+					You can fetch a <a href="#ao2"><span class="object">Mark</span></a> object by using one of these lines:<br />
+					<code>
+						<a href="#ao11"><span class="object">Map</span></a>.<span class="function">get(</span>"markname"<span class="function">)</span><br />
+						<a href="#ao11"><span class="object">Map</span></a>.<span class="function">get(</span><span class="variable">sName</span><span class="function">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><a href="#ao11"><span class="object">Map</span></a>
+							= A <a href="#ao11"><span class="object">Map</span></a> object returned by the <span class="function">map()</span> method of the <a href="#ao10"><span class="object">Planet</span></a> object.
+						</li>
+						<li><span class="variable">sName</span> / <strong><em>"markname"</em></strong>
+							= A string with the name of the mark used to create it.
+						</li>
+					</ul>
+					Provides:<br />
+					<a name="ao2pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="object">Map</span>
+							= The <a href="#ao11"><span class="object">Map</span></a> object this mark belongs to.<br />
+							This can be used for reverse traversals.
+						</li>
+						<li><span class="variable">type</span> = The full marktype selector or <strong>"Custom"</strong> when initialized using a URL/Filename.</li>
+						<li><span class="object">img</span>
+							= A javascript <span class="object">Image()</span> object holding this marks image.<br />
+							This is used so the browser pre-loads the assosiated image of the mark.
+						</li>
+						<li><span class="variable">x</span>, <span class="variable">y</span> = X,Y Coordiantes of the mark in the map.</li>
+						<li><span class="variable">name</span> = Name of the mark or <strong>"NoName"</strong> when none was supplied.</li>
+						<li>
+							<span class="variable">desc</span>
+							= String containing the description of the mark or <strong><em>null</em></strong> when none was supplied.<br />
+							Can hold HTML tags.
+						</li>
+						<li>
+							<span class="variable">minZoom</span>,
+							<span class="variable">maxZoom</span>
+							= Min/Max Zoom level allowed to show mark on map. (<strong><em>-1</em></strong> being minimap zoomlevel.)
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao3"><span class="object">ItemType</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao4"><span class="object">Items</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao5"><span class="object">MonsterType</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao6"><span class="object">Monsters</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao7"><span class="object">NPCType</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao8"><span class="object">NPCs</span></a> object<br />
+					This needs to be written...
+				</li>
+				<li><a name="ao9"><span class="object">Universe</span></a> object<br />
+					This is the instance of the main <span class="object">SolarSystem</span> application object.<br />
+					The object&acute;s class name is <span class="object">SolarSystem</span> because thats the name of the application.<br />
+					You initialize it by using one of these lines:<br />
+					<code>
+						<span class="object">Universe</span> = new <span class="object">SolarSystem(</span> <span class="variable">sName</span>, null, <span class="variable">sImg</span> <span class="object">)</span>;<br />
+						<span class="object">Universe</span> = new <span class="object">SolarSystem(</span> <span class="variable">sName</span>, <span class="object">aPlanets</span>, <span class="variable">sImg</span>, <span class="object">aIMAP</span> <span class="object">)</span>;
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sName</span> = SolarSystem&acute;s name.</li>
+						<li><span class="object">aPlanets</span> = Optional Array of <a href="#ao10"><span class="object">Planet</span></a> object&acute;s.</li>
+						<li><span class="variable">sImg</span> = SolarSystem Image. Can be some text or full URL.</li>
+						<li><span class="object">aIMAP</span> = Optional Array of <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s to use as Imagemap.</li>
+					</ul>
+					Provides:<br />
+					<a name="ao9m"><strong>Methods:</strong></a>
+					<ul>
+						<li><span class="function">clear()</span><br />
+							Clears the Array of <a href="#ao10"><span class="object">Planet</span></a> object&acute;s and <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s to use.
+						</li>
+						<li><span class="function">image(</span><span class="variable">bflag</span><span class="function">)</span><br />
+							Returns full filename to use as image.
+							If the provided <span class="variable">sImg</span> was not a full URL this will compose a full filename,<br />
+							by prepending "<span class="filename">map_</span>" and, if <span class="variable">bflag</span>=<strong><em>true</em></strong>, appending "<span class="filename">_small</span>" to it and using "<span class="filename">.png</span>" as extension.
+						</li>
+						<li><span class="function">add(</span><span class="object">obj</span><span class="function">)</span><br />
+							Adds a <a href="#ao10"><span class="object">Planet</span></a> object or <a href="#ao12"><span class="object">ImageMapArea</span></a> object depending on the type of <span class="object">obj</span> provided.<br />
+							This can be used to add these objects after initialisation.
+						</li>
+						<li><span class="function">planet(</span><span class="variable">sName</span><span class="function">)</span><br />
+							Returns a <a href="#ao10"><span class="object">Planet</span></a> object corrosponding to <span class="variable">sName</span>.<br />
+							This is used to fetch <a href="#ao10"><span class="object">Planet</span></a> object&acute;s from the <a href="#ao9"><span class="object">Universe</span></a> object.
+						</li>
+						<li><span class="object">Control</span> = A <a href="#ao13"><span class="object">ControlCenter</span></a> object used as a interface to interact with DHTML functionalities.</li>
+					</ul><br />
+					<a name="ao9pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="variable">name</span> = Name of the planet.</li>
+						<li><span class="object">planets</span>
+							= A Javascript <span class="object">Array()</span> object holding all <a href="#ao10"><span class="object">Planet</span></a> object&acute;s for this <span class="object">SolarSystem</span>.<br />
+							Use <span class="object">planets</span>.<span class="variable">length</span> to get total number of <a href="#ao10"><span class="object">Planet</span></a> object&acute;s present.<br />
+							or <span class="object">planets</span>[<span class="variable">nInd</span>] to get a specific <a href="#ao10"><span class="object">Planet</span></a> object with index# <span class="variable">nInd</span>.
+						</li>
+						<li><span class="variable">img</span>
+							= SolarSystem Image. Can be some text or full URL.<br />
+							Use the <span class="function">image()</span> method to get the full URL/filename to use.
+						</li>
+						<li><span class="object">imgMap</span>
+							= A Javascript <span class="object">Array()</span> object holding all <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s that makeup the Imagemap for this <a href="#ao9"><span class="object">Universe</span></a> object&acute;s <span class="variable">img</span>.<br />
+							Use <span class="object">imgMap</span>.<span class="variable">length</span> to get total number of <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s present.<br />
+							or <span class="object">imgMap</span>[<span class="variable">nInd</span>] to get a specific <a href="#ao12"><span class="object">ImageMapArea</span></a> object with index# <span class="variable">nInd</span>.
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao10"><span class="object">Planet</span></a> object<br />
+					This object holds everything about a planet.<br />
+					You create one by using one of these lines:<br />
+					<code>
+						new <span class="object">Planet(</span>"planetname"<span class="object">)</span><br />
+						new <span class="object">Planet(</span>"planetname", x<span class="object">)</span><br />
+						new <span class="object">Planet(</span>"planetname", "img"<span class="object">)</span><br />
+						new <span class="object">Planet(</span><span class="variable">sName</span>, <span class="variable">sArg</span>, <span class="object">aIMAP)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sName</span> / <strong><em>"planetname"</em></strong> = String with Planet&acute;s name.</li>
+						<li><span class="variable">sArg</span> / <strong><em>x</em></strong> / <strong><em>"img"</em></strong>
+							= Optional either a number or imagename.<br />
+							if provided as a number, <strong><em>x</em></strong>, it sets the number of maps to show on one line in planet view.<br />
+							if provided as a non-number, <strong><em>"img"</em></strong>, it sets the image to use as planet layout. Can be some text or full URL.
+						</li>
+						<li><span class="object">aIMAP</span> = Optional Array of <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s to use as Imagemap.</li>
+					</ul>
+					You can fetch a <a href="#ao10"><span class="object">Planet</span></a> object by using one of these lines:<br />
+					<code>
+						<a href="#ao9"><span class="object">Universe</span></a>.<span class="function">planet(</span>"planetname"<span class="function">)</span><br />
+						<a href="#ao9"><span class="object">Universe</span></a>.<span class="function">planet(</span><span class="variable">sName</span><span class="function">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sName</span> / <strong><em>"planetname"</em></strong>
+							= a string with the name of the planet used to create it.
+						</li>
+					</ul>
+					Provides:<br />
+					<a name="ao10m"><strong>Methods:</strong></a>
+					<ul>
+						<li><span class="function">clear()</span><br />
+							Clears the Array of <a href="#ao11"><span class="object">Map</span></a> object&acute;s to use.
+						</li>
+						<li><span class="function">image(</span><span class="variable">bflag</span><span class="function">)</span><br />
+							Returns full filename to use as image.
+							If the provided <span class="variable">sArg</span> was not a number or full URL, this will compose a full filename,<br />
+							by prepending "<span class="filename">map_</span>" and, if <span class="variable">bflag</span>=<strong><em>true</em></strong>, appending "<span class="filename">_small</span>" to it and using "<span class="filename">.png</span>" as extension.
+						</li>
+						<li><span class="function">add(</span><span class="object">oMap</span><span class="function">)</span><br />
+							Adds a <a href="#ao11"><span class="object">Map</span></a> object to the Array of <a href="#ao11"><span class="object">Map</span></a> object&acute;s to use.<br />
+							This can be used to add these objects after creation.
+						</li>
+						<li><span class="function">map(</span><span class="variable">sName</span><span class="function">)</span><br />
+							Returns a <a href="#ao11"><span class="object">Map</span></a> object corrosponding to <span class="variable">sName</span>.<br />
+							This is used to fetch <a href="#ao11"><span class="object">Map</span></a> object&acute;s from the <a href="#ao10"><span class="object">Planet</span></a> object.
+						</li>
+						<li><span class="function">makeIMAP(</span><span class="variable">sImg</span>, <span class="object">aIMAP</span><span class="function">)</span><br />
+							This is used to associate a image and imagemap with the <a href="#ao10"><span class="object">Planet</span></a> object after creation.<br />
+							<strong>Where:</strong>
+							<ul>
+								<li><span class="variable">sImg</span> = String containing the image to use as planet layout. Can be some text or full URL.<br />
+									This is used by the <span class="function">image()</span> method see above.
+								</li>
+								<li><span class="object">aIMAP</span> = Array of <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s to use as Imagemap.</li>
+							</ul>
+						</li>
+					</ul><br />
+					<a name="ao10pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="object">SolarSystem</span>
+							= The <a href="#ao9"><span class="object">SolarSystem</span></a> object this planet belongs to.<br />
+							This can be used for reverse traversals.
+						</li>
+						<li><span class="variable">name</span> = Name of the planet.</li>
+						<li><span class="variable">img</span>
+							= Planet Image. Can be some text or full URL.<br />
+							Use the <span class="function">image()</span> method to get the full URL/filename to use.
+						</li>
+						<li><span class="object">imgMap</span>
+							= A Javascript <span class="object">Array()</span> object holding all <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s that makeup the Imagemap for this <a href="#ao10"><span class="object">Planet</span></a> object&acute;s <span class="variable">img</span>.<br />
+							Use <span class="object">imgMap</span>.<span class="variable">length</span> to get total number of <a href="#ao12"><span class="object">ImageMapArea</span></a> object&acute;s present.<br />
+							or <span class="object">imgMap</span>[<span class="variable">nInd</span>] to get a specific <a href="#ao12"><span class="object">ImageMapArea</span></a> object with index# <span class="variable">nInd</span>.
+						</li>
+						<li><span class="variable">x</span> = Max number of maps to show on one line in planet view.</li>
+						<li><span class="object">maps</span>
+							= A Javascript <span class="object">Array()</span> object holding all the <a href="#ao11"><span class="object">Map</span></a> object&acute;s of this <a href="#ao10"><span class="object">Planet</span></a> object.<br />
+							Use <span class="object">maps</span>.<span class="variable">length</span> to get total number of <a href="#ao11"><span class="object">Map</span></a> object&acute;s present.<br />
+							or <span class="object">maps</span>[<span class="variable">nInd</span>] to get a specific <a href="#ao11"><span class="object">Map</span></a> object with index# <span class="variable">nInd</span>.
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao11"><span class="object">Map</span></a> object<br />
+					This object holds everything about a map.<br />
+					You create one by using one of these lines:<br />
+					<code>
+						new <span class="object">Map(</span>"mapname", X-Size, Y-Size<span class="object">)</span><br />
+						new <span class="object">Map(</span><span class="variable">sName</span>, <span class="variable">nX</span>, <span class="variable">nY</span>, <span class="variable">sImg</span><span class="object">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sName</span> / <strong><em>"mapname"</em></strong> = String with the <span class="object">Map</span>&acute;s name.</li>
+						<li><span class="variable">nX</span> / <strong><em>X-Size</em></strong> = Horizontal size in pixels of the map.</li>
+						<li><span class="variable">nY</span> / <strong><em>Y-Size</em></strong> = Vertical size in pixels of the map.</li>
+						<li><span class="variable">sImg</span>
+							= Optional but reccomended.<br />
+							Map Image. Can be some text or full URL.
+						</li>
+					</ul>
+					You can fetch a <a href="#ao11"><span class="object">Map</span></a> object by using one of these lines:<br />
+					<code>
+						<a href="#ao10"><span class="object">Planet</span></a>.<span class="function">map(</span>"mapname"<span class="function">)</span><br />
+						<a href="#ao10"><span class="object">Planet</span></a>.<span class="function">map(</span><span class="variable">sName</span><span class="function">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><a href="#ao10"><span class="object">Planet</span></a>
+							= A <a href="#ao10"><span class="object">Planet</span></a> object returned by the <span class="function">planet()</span> method of the <a href="#ao9"><span class="object">Universe</span></a> object.
+						</li>
+						<li><span class="variable">sName</span> / <strong><em>"mapname"</em></strong>
+							= a string with the name of the map used to create it.
+						</li>
+					</ul>
+					Provides:<br />
+					<a name="ao11m"><strong>Methods:</strong></a>
+					<ul>
+						<li><span class="function">clear()</span><br />
+							Clears the Array of <a href="#ao2"><span class="object">Mark</span></a> object&acute;s to use.
+						</li>
+						<li><span class="function">image(</span><span class="variable">bflag</span><span class="function">)</span><br />
+							Returns full filename to use as image.
+							If the provided <span class="variable">sImg</span> was not a full URL this will compose a full filename,<br />
+							by prepending "<span class="filename">map_</span>" and, if <span class="variable">bflag</span>=<strong><em>true</em></strong>, appending "<span class="filename">_small</span>" to it and using "<span class="filename">.png</span>" as extension.
+						</li>
+						<li><span class="function">add(</span><span class="object">oMark</span><span class="function">)</span><br />
+							Adds a <a href="#ao2"><span class="object">Mark</span></a> object to the Array of <a href="#ao2"><span class="object">Mark</span></a> object&acute;s to use.<br />
+							This can be used to add these objects after creation.
+						</li>
+						<li><span class="function">get(</span><span class="variable">sName</span><span class="function">)</span><br />
+							Returns a <a href="#ao2"><span class="object">Mark</span></a> object corrosponding to <span class="variable">sName</span>.<br />
+							This is used to fetch <a href="#ao2"><span class="object">Mark</span></a> object&acute;s from the <a href="#ao11"><span class="object">Map</span></a> object.
+						</li>
+					</ul><br />
+					<a name="ao11pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="object">Planet</span>
+							= The <a href="#ao10"><span class="object">Planet</span></a> object this map belongs to.<br />
+							This can be used for reverse traversals.
+						</li>
+						<li><span class="variable">name</span> = Name of the map.</li>
+						<li><span class="variable">x</span>, <span class="variable">y</span> = X,Y Sizes of the map.</li>
+						<li><span class="variable">img</span>
+							= Map Image. Can be some text or full URL.<br />
+							Use the <span class="function">image()</span> method to get the full URL/filename to use.
+						</li>
+						<li><span class="object">Marks</span>
+							= A Javascript <span class="object">Array()</span> object holding all <a href="#ao2"><span class="object">Mark</span></a> object&acute;s in this map.<br />
+							Use <span class="object">Marks</span>.<span class="variable">length</span> to get total number of <a href="#ao2"><span class="object">Mark</span></a> object&acute;s present.<br />
+							or <span class="object">Marks</span>[<span class="variable">nInd</span>] to get a specific <a href="#ao2"><span class="object">Mark</span></a> object with index# <span class="variable">nInd</span>.
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao12"><span class="object">ImageMapArea</span></a> object<br />
+					This object is similar to the HTML AREA element, but has a small variant on the location attribute.<br />
+					You create one by using one of these lines:<br />
+					<code>
+						new <span class="object">ImageMapArea(</span>"shape",	<span class="object">Array(</span>shape-coords<span class="object">)</span>,	"alt text"<span class="object">)</span><br />
+						new <span class="object">ImageMapArea(</span><span class="variable">sShape</span>, <span class="object">aCoords</span>, <span class="variable">sAlt</span>, <span class="variable">sLoc</span><span class="object">)</span>
+					</code><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sShape</span> / <strong><em>"shape"</em></strong>
+							= String containing the shape of the area.<br />
+							This is the same as the shape names used in HTML.
+						</li>
+						<li><span class="object">aCoords</span> / <span class="object">Array(</span><strong><em>shape-coords</em></strong><span class="object">)</span>
+							= An Array consisting of numbers only.<br />
+							These are the same numbers one would using in the HTML version, corrosponding to the <span class="variable">sShape</span>.
+						</li>
+						<li><span class="variable">sAlt</span> / <strong><em>"alt text"</em></strong>
+							= String containing the ALT text to use, and is internaly also copied to the TITLE attribute.<br />
+							This text is shown when the browsing user moves the mouse over the image part.
+						</li>
+						<li><span class="variable">sLoc</span> = String containing the location to navigate to.<br />
+							It consists of 1 part for planet navigation and 2 parts for map navigation seperated by a vertical dash. Examples:<br />
+							<code>
+								"Planet"<br />
+								"Planet|Map"
+							</code><br />
+							<strong>Where:</strong>
+							<ul>
+								<li><strong><em>Planet</em></strong> = Name of the planet to navigate to.</li>
+								<li><strong><em>Map</em></strong> = Name of the map to navigate to.</li>
+							</ul>
+						</li>
+					</ul>
+					Provides:<br />
+					<a name="ao12pv"><strong>Public variables:</strong></a>
+					<ul>
+						<li><span class="variable">Shape</span> = String holding the HTML shape name.</li>
+						<li><span class="object">Coords</span>
+							= A Javascript <span class="object">Array()</span> object holding all coordinates for the <span class="variable">Shape</span>.
+						</li>
+						<li><span class="variable">Alt</span> = String holding text to be used as ALT and TITLE texts.</li>
+						<li><span class="variable">Loc</span>
+							= String containing location to navigate to.<br />
+							This can be a planet name followed by an optional mapname seperated by a vertical dash "<strong><em>|</em></strong>".
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="ao13"><span class="object">ControlCenter</span></a> object<br />
+					This is an internal object used as a interface to the DHTML functionalities.<br />
+					It should <strong>NOT</strong> be used standalone.<br />
+					Provides:<br />
+					<a name="ao13m"><strong>Methods:</strong></a>
+					<ul>
+						<li><span class="function">MakeSearch(</span><span class="object">oPlanet</span>, <span class="object">oMap</span><span class="function">)</span><br />
+							Composes a search string tobe used for quicklinks.<br />
+							It returns a string containing all settings that are active at moment of the call,
+							composed as a full search string, starting with "<span class="filename">?</span>",
+							useable in a link element&acute;s HREF value or URL replacement of the HTML page.
+						</li>
+						<li><span class="function">Debug(</span><span class="variable">bFlag</span><span class="function">)</span><br />
+							Sets or clears the Debug flag accoarding to the boolean <span class="variable">bFlag</span>.
+						</li>
+						<li><span class="function">Test(</span><span class="variable">bFlag</span><span class="function">)</span><br />
+							Sets or clears the Test flag accoarding to the boolean <span class="variable">bFlag</span>.
+						</li>
+						<li><span class="function">CC(</span><span class="variable">bShow</span><span class="function">)</span><br />
+							Shows or hides the DHTML Control-Center on the webpage accoarding to the boolean <span class="variable">bShow</span>.
+						</li>
+						<li><span class="function">MarkTypes(</span><span class="variable">bShow</span><span class="function">)</span><br />
+							Shows or hides the DHTML MarkTypes listing on the webpage accoarding to the boolean <span class="variable">bShow</span>.
+						</li>
+						<li><span class="function">ShowMaps(</span><span class="variable">bShow</span><span class="function">)</span><br />
+							Shows or hides the DHTML Solarsystem/Maps display on the webpage accoarding to the boolean <span class="variable">bShow</span>.<br />
+							This is usefull if you only want to generate marks listings for a specific map.
+						</li>
+						<li><span class="function">SetZoom(</span><span class="variable">nZoom</span><span class="function">)</span><br />
+							Sets the Zoom level at <span class="variable">nZoom</span> to be used in map displays.
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+			</ol>
+		</div>
+		<br /><div class="docdiv">
+			<a name="ScriptParts" class="heading">Overview of Script Parts:</a> <a href="#toc">&rArr; Back to T.O.C.</a><br />
+			<br />
+			The whole application is devided into subsections, and each subsection loads the next section with some exceptions as noted below.
+			<ol type="i">
+				<li><a name="sp1"><span class="filename">LoadScripts.js</span></a><br />
+					This is the first script that gets loaded.<br />
+					Its only purpose is to provide the loading mechanism and visual.<br />
+					It is put in the head section of the HTML file using a script tag.<br />
+					The first time <span class="function">LoadScript()</span> is called it will generate and insert the visual into the document.<br />
+					From then on it will check the properties of its supplied structure with an interval of <strong><em>500ms</em></strong>.<br />
+					When the values reach their destination it will exit this interval removing the visual and call the <span class="function">init()</span> function of the scripts that used it.<br />
+					Provides:<br />
+					<strong>function</strong> <span class="function">LoadScript(</span><span class="variable">sURL</span>, <span class="variable">bDefer</span><span class="function">)</span><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="variable">sURL</span> = String containing URL of script filename to load.</li>
+						<li><span class="variable">bDefer</span> = Boolean indicating usage of the &acute;<strong><em>defer</em></strong>&acute; flag.</li>
+					</ul>
+					<strong>structure</strong> <span class="object">gLoadScript</span>
+					<ul>
+						<li><span class="variable">ToLoad</span> = Total file number to load.</li>
+						<li><span class="variable">TotalSize</span> = Total Bytes to load.</li>
+						<li><span class="variable">Loaded</span> = Current #files loaded.</li>
+						<li><span class="variable">SizeLoaded</span> = Current #Bytes loaded.</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="sp2"><span class="filename">SolarSystem.js</span></a><br />
+					This is the first script of the actual application.<br />
+					It initializes the total files and bytes to load,
+					then loads "<a href="#sp3"><span class="filename">TestBrowser.js</span></a>" and "<a href="#sp4"><span class="filename">ClassLib.js</span></a>",
+					and exits by increasing the loaded bytes with the filesize of itself.<br />
+					The initialized total files is actualy 1 less as the total number of files because this file is not loaded using the loader system.<br />
+					It is put in the body section of the HTML file using a script tag.
+				</li>
+				<li><a name="sp3"><span class="filename">TestBrowser.js</span></a><br />
+					This script tests the capabilities and type of the users browser.<br />
+					It doesn&acute;t load other scripts and exits by increasing the loaded bytes with the filesize of itself.<br />
+					You can/should use <span class="function">ShowException()</span> in exception handling, this function will use an <span class="function">alert()</span> to inform the user of any exceptions if the global boolean <span class="variable">bDebug</span> is set <strong><em>true</em></strong>.<br />
+					Provides:<br />
+					<strong>function</strong> <span class="function">ShowException(</span><span class="object">e</span><span class="function">)</span><br />
+					<strong>Where:</strong>
+					<ul>
+						<li><span class="object">e</span> = A Javascript <span class="object">Error()</span> object.</li>
+					</ul>
+					<strong>Global variables:</strong>
+					<ul>
+						<li><span class="variable">bDebug</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating Debugging functions should be active.</li>
+						<li><span class="variable">noDOM</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating no support of the W3C DOM model.</li>
+						<li><span class="variable">noDOM1HTML</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating no support of the W3C DOM-HTML Level 1 model.</li>
+						<li><span class="variable">noDOM2</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating no support of the W3C DOM-Core Level 2 model.</li>
+						<li><span class="variable">noDOM2HTML</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating no support of the W3C DOM-HTML Level 2 model.</li>
+						<li><span class="variable">isIE4</span>, <span class="variable">isIE5</span>, <span class="variable">isIE6</span> = true/false indicating use of Internet Explorer browser versions.</li>
+						<li><span class="variable">isNS4</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating use of Netscape v4 browsers.</li>
+						<li><span class="variable">isMoz</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating use of Mozilla browsers.</li>
+						<li><span class="variable">isFF</span>, <span class="variable">isFF09</span>, <span class="variable">isFF010</span> = true/false indicating use of FireFox, FireFox v0.9 and FireFox v0.10 browsers respectivly.</li>
+						<li><span class="variable">isOp</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating use of Opera browsers.</li>
+						<li><span class="variable">isMac</span>, <span class="variable">isMacIE</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating use of Macintosh browsers.</li>
+						<li><span class="variable">gTestBrowser</span> = <strong><em>null</em></strong> or a string with HTML to be included in a document.<br />
+							The HTML consists of a notice and results of DOM tests.
+						</li>
+					</ul>
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="sp4"><span class="filename">ClassLib.js</span></a><br />
+					This is the heart of the application.<br />
+					It provides all the objects that are used to setup the whole system.<br />
+					It loads "<a href="#sp5"><span class="filename">Support.js</span></a>", and exits by increasing the loaded bytes with the filesize of itself.<br />
+					Provides:<br />
+					<strong>Global variables:</strong>
+					<ul>
+						<li><span class="variable">noMark</span> = Image placeholder to use when no mark image available. (defaults to "<span class="filename">noMark</span>")</li>
+						<li><span class="variable">noMap</span> = Image placeholder to use when no map image available. (defaults to "<span class="filename">back</span>")</li>
+						<li><span class="object">MarkTypes</span> = Main object of default MarkTypes.</li>
+						<li><span class="object">Items</span> = Main object of Items.</li>
+						<li><span class="object">Monsters</span> = Main object of Monsters.</li>
+						<li><span class="object">NPCs</span> = Main object of NPCs.</li>
+					</ul><br />
+					<strong>Global objects:</strong>
+					<ul>
+						<li>See: <a href="#ApplicationObjects" class="heading">Application objects explained</a></li>
+					</ul>
+				</li>
+				<li><a name="sp5"><span class="filename">Support.js</span></a><br />
+					This script consists of all kind of functions that are used in inter-connections of the objects in "<a href="#sp4"><span class="filename">ClassLib.js</span></a>",
+					as well as functions for the test, URL-search and <span class="function">init()</span> functionalities.<br />
+					It loads "<a href="#sp6"><span class="filename">DHTML.js</span></a>", and exits by increasing the loaded bytes with the filesize of itself.<br />
+					Provides:<br />
+					<strong>Global variables:</strong>
+					<ul>
+						<li><span class="object">Universe</span> = Main application object.</li>
+						<li><span class="variable">bDebug</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating Debugging functions should be active.</li>
+						<li><span class="variable">bTest</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating Testing mode active.</li>
+						<li><span class="variable">bCC</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating if &acute;Control Center&acute;. should be shown</li>
+						<li><span class="variable">bMarkTypes</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating if main &acute;MarkTypes&acute;. listing should be shown</li>
+						<li><span class="variable">gShowMaps</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating if &acute;Maps&acute;. should be shown</li>
+						<li><span class="variable">gShowMonsters</span> = <strong><em>true</em></strong>/<strong><em>false</em></strong> indicating if &acute;Monsters&acute;. should be shown</li>
+						<li><span class="variable">gPlanet</span> = Initial <span class="object">Planet</span> to navigate to.</li>
+						<li><span class="variable">gMap</span> = Initial <span class="object">Map</span> to navigate to.</li>
+						<li><span class="variable">gZoom</span> = Initial Zoom Level to use in detailed view.</li>
+					</ul>
+					All of these, except <span class="object">Universe</span>, are set using the URL-Search functionality.<br />
+					<a href="#toc">&rArr; Back to T.O.C.</a>
+				</li>
+				<li><a name="sp6"><span class="filename">DHTML.js</span></a><br />
+					This script is the heart of all visual representations.<br />
+					It consists of functions that deal with the generation of the DHTML content.<br />
+					It loads "<a href="#sp7"><span class="filename">MarkTypes.js</span></a>", "<a href="#sp11"><span class="filename">Items.js</span></a>", "<a href="#sp13"><span class="filename">Monsters.js</span></a>", "<a href="#sp15"><span class="filename">NPCs.js</span></a>" and exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp7"><span class="filename">MarkTypes.js</span></a><br />
+					This script initializes the Main <span class="object">MarkTypes</span> object of default <span class="object">MarkType</span>&acute;s.<br />
+					For a overview of created selectors, browse the application using "<strong><em>MarkTypes</em></strong>" as an argument in the search string of the URL.<br />
+					It loads "<a href="#sp8"><span class="filename">Planets.js</span></a>", and exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp8"><span class="filename">Planets.js</span></a><br />
+					This script initializes the Main <span class="object">Universe</span> object of the <span class="object">SolarSystem</span> application.<br />
+					It populates the <span class="object">Universe</span> object with <span class="object">Planet</span> object&acute;s and populates them by loading their corrosponding "<a href="#sp9"><span class="filename">Maps xxxx.js</span></a>" files.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp9"><span class="filename">Maps xxxx.js</span></a><br />
+					These files consist of script commands to populate the <span class="object">Planet</span> object&acute;s with <span class="object">Map</span> object&acute;s, for whom they were written.<br />
+					It populates the individual <span class="object">Map</span> object&acute;s with <span class="object">Mark</span> object&acute;s by loading their corrosponding "<a href="#sp10"><span class="filename">Marks xxxx.js</span></a>" files.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp10"><span class="filename">Marks xxxx.js</span></a><br />
+					These files consist of script commands to populate the <span class="object">Map</span> object&acute;s with <span class="object">Mark</span> object&acute;s, for whom they were written.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp11"><span class="filename">Items.js</span></a><br />
+					This script initializes the Main <span class="object">Items</span> object of the <span class="object">SolarSystem</span> application.<br />
+					It populates the <span class="object">Items</span> object by loading their corrosponding "<a href="#sp12"><span class="filename">Items xxx.js</span></a>" files.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp12"><span class="filename">Items xxx.js</span></a><br />
+					This files consist of script commands to populate the <span class="object">Items</span> object with <span class="object">ItemType</span> object&acute;s, for whom they were written.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp13"><span class="filename">Monsters.js</span></a><br />
+					This script initializes the Main <span class="object">Monsters</span> object of the <span class="object">SolarSystem</span> application.<br />
+					It populates the <span class="object">Monsters</span> object by loading their corrosponding "<a href="#sp14"><span class="filename">Monsters xxx.js</span></a>" files.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp14"><span class="filename">Monsters xxx.js</span></a><br />
+					This files consist of script commands to populate the <span class="object">Monsters</span> object with <span class="object">MonsterType</span> object&acute;s, for whom they were written.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp15"><span class="filename">NPCs.js</span></a><br />
+					This script initializes the Main <span class="object">NPCs</span> object of the <span class="object">SolarSystem</span> application.<br />
+					It populates the <span class="object">NPCs</span> object by loading their corrosponding "<a href="#sp16"><span class="filename">NPCs xxx.js</span></a>" files.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+				<li><a name="sp16"><span class="filename">NPCs xxx.js</span></a><br />
+					This files consist of script commands to populate the <span class="object">NPCs</span> object with <span class="object">NPCType</span> object&acute;s, for whom they were written.<br />
+					It exits by increasing the loaded bytes with the filesize of itself.
+				</li>
+			</ol>
+		</div>
+<!--
+		<br /><div class="docdiv">
+			<a name="" class="heading">:</a> <a href="#toc">&rArr; Back to T.O.C.</a><br />
+			<br />
+		</div>
+-->
+		<hr/>
+		<table class="footer" align="center" border="0" cellspacing="5" cellpadding="0" width="100%">
+			<colgroup>
+				<col width="125px" />
+				<col width="*" />
+				<col width="*" />
+				<col width="176px" />
+			</colgroup>
+			<tr valign="top">
+				<td>
+					<!-- Creative Commons License -->
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/"><img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights20.gif" /></a><br />
+					This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons License</a>.
+					<!-- /Creative Commons License -->
+					<br/>
+					Read our <a href="http://www.trimoon.demon.nl/policies/">Policies</a> and especialy <a href="http://www.trimoon.demon.nl/policies/#disclaimer">Disclaimer</a> !
+				</td>
+				<td>
+					<a href="http://www.spreadfirefox.com/?q=user/register&amp;r=14994" title="Spread FireFox"><span class="rss">Spread FireFox</span></a><br />
+					<a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=14994&amp;t=61"><img border="0" alt="Get Firefox!" title="Get Firefox!" src="http://www.spreadfirefox.com/community/images/affiliates/Buttons/110x32/trust.gif"/></a><br />
+					<br />
+					<a href="http://del.icio.us/trimoon" title="My bookmarks on del.icio.us"><span class="rss">RSS: My Bookmarks</span></a>
+				</td>
+				<td>
+					<a href="http://www.trimoon.demon.nl/policies/#rating"
+						><img alt="[ RSACi ]" src="http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif" align="middle" /><br
+						/><img alt="[ SafeSurf ]" src="http://www.trimoon.demon.nl/policies/SafeSurf/ssurf.gif" align="middle" /><br
+						/><img alt="[ Safe For Kids ]" src="http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif" align="middle"
+					/></a>
+				</td>
+				<td align="right">
+					<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://www.w3.org/Icons/valid-css" alt="[Valid CSS]" /></a
+					><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="[Valid XHTML 1.0!]" /></a><br />
+					<a href="http://www.w3.org/Style/CSS/Buttons/"><img src="http://www.w3.org/Style/CSS/Buttons/mwcts" alt="[Made With Cascading StyleSheets]" /></a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" style="color:red; text-align:center;"
+					><script src="js/TestBrowser.js" type="text/javascript">
+						if(gTestBrowser)	document.write(gTestBrowser);
+					</script
+				></td>
+			</tr>
+		</table>
+<!-- Creative Commons License -->
+<!--
+		<rdf:RDF	xmlns="http://web.resource.org/cc/"
+					xmlns:dc="http://purl.org/dc/elements/1.1/"
+					xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<Work rdf:about="">
+				<dc:date>2004</dc:date>
+				<dc:creator><Agent><dc:title>O.Elliyasa</dc:title></Agent></dc:creator>
+				<dc:rights><Agent><dc:title>TriMoon Inc.</dc:title></Agent></dc:rights>
+				<dc:source rdf:resource="http://fans.freeworldonline.com/trimoon/manual.html"/>
+				<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.0/" />
+			</Work>
+			<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/2.0/">
+				<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+				<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+				<requires rdf:resource="http://web.resource.org/cc/Notice" />
+				<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+				<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+			</License>
+		</rdf:RDF>
+-->
+<!-- /Creative Commons License -->
+	</body
+></html>

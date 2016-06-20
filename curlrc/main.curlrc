@@ -1,0 +1,7 @@
+progress-bar
+verbose
+fail
+compressed
+proto-default = http
+location
+remote-time

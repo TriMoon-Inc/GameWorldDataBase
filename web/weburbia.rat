@@ -1,0 +1,32 @@
+
+
+((PICS-version 1.1)
+ (rating-system "http://www.weburbia.com/safe/")
+ (rating-service "http://www.weburbia.com/safe/ratings.htm")
+ (name "Weburbia")
+ (description "Weburbia's is the simplest possible rating system. Web sites are self-rated by the author of the pages")
+
+ (category 
+  (transmit-as "s")
+  (name "Rating")
+  (label
+   (name "Safe For Kids")
+   (description "Pages which are rated by their author as Safe For Kids even when unsupervised")
+   (value 0) 
+  )
+  (label
+   (name "Parental Guidance")
+   (description "Pages which are suitable for older kids when their parents or teachers are with them to supervise and offer guidance. These pages may have content which not all parents consider suitable for children.")
+   (value 1) 
+  )
+  (label
+   (name "Adults only")
+   (description "Pages which are not suitable for kids")
+   (value 2) 
+  )
+ )
+)
+         
+         
+         
+         

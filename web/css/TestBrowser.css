@@ -1,0 +1,17 @@
+/*
+	(C)2004 TriMoon Inc.
+	Author: Tri_Moon <tripple_moon_3m@yahoo.com>
+	Test Browser Styles.
+
+	This work is licensed under a Creative Commons License !
+	See: http://creativecommons.org/licenses/by-nc-nd/2.0/
+*/
+#CapTestResults, #FFNotice{
+	font-size : x-small;
+}
+#CapTestResults{
+	color : Teal;
+}
+#FFNotice{
+	color : Red;
+}

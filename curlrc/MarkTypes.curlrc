@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-MarkTypes.log
+
+# DB Image files: MarkTypes.js
+url = "fans.freeworldonline.com/trimoon/maps/MT_{noMark,MagicDark,MagicLife,MagicLight,MagicWar,NpcVendorPets,Bank,NpcQuest,Hut,City,Village,Castle,Portal,PortalPlanet,PortalMap,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10}.png"
+output = "web/maps/MT_#1.png"

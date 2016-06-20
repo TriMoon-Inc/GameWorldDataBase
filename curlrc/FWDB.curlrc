@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-FWDB.log
+
+# DB Javascript files
+url = "fans.freeworldonline.com/trimoon/js/{ClassLib,Support,DHTML,Items,NPCs,Monsters,MarkTypes,Planets}.js"
+output = "web/js/#1.js"

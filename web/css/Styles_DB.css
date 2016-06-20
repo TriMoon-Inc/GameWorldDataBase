@@ -1,0 +1,69 @@
+/*
+	(C)2004 TriMoon Inc.
+	Author: Tri_Moon <tripple_moon_3m@yahoo.com>
+	Default FreeWorld Maps Style-Sheet.
+
+	This work is licensed under a Creative Commons License !
+	See: http://creativecommons.org/licenses/by-nc-nd/2.0/
+*/
+@import url(../css/Styles.css);
+.mapDetails A:HOVER {font-size : 100%;}
+#main_heading{
+	font-size : 100%;
+}
+.mapDetails #mapname{
+	font-family : "Times New Roman", Times, serif;
+	font-size : 200%;
+	font-weight : bold;
+	text-decoration : underline;
+}
+.mapDetails .MarksTableRow{
+	background-color : #003200;
+}
+.docdiv {
+	font-family : "Times New Roman", Times, serif;
+}
+.docdiv .heading {
+	color : Silver;
+	text-decoration : underline;
+	font-weight : bold;
+	font-size : 150%;
+}
+.docdiv .filename {
+	color : Green;
+	font-style : italic;
+}
+.docdiv .howto {
+	color : Aqua;
+	font-weight : bold;
+}
+.docdiv .object {
+	color : Purple;
+	font-weight : bold;
+	font-size : 120%;
+	font-style : italic;
+}
+.docdiv .function {
+	color : Blue;
+	text-decoration : none;
+	font-size : 120%;
+}
+.docdiv .variable {
+	color : Teal;
+	text-decoration : none;
+	font-size : 75%;
+}
+strong em {
+	color : Yellow;
+	text-decoration : none;
+	font-size : 75%;
+}
+a strong em {
+	text-decoration : underline;
+}
+code {
+	background-color : Gray;
+	color : Black;
+	font-size : 60%;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,81 @@
+/*
+ (C)2004 TriMoon Inc.
+ Author: Tri_Moon <tripple_moon_3m@yahoo.com>
+ Default FreeWorld Style-Sheet.
+
+ This work is licensed under a Creative Commons License !
+ See: http://creativecommons.org/licenses/by-nc-nd/2.0/
+*/
+/* @import url(http://www.trimoon.demon.nl/games/Styles.css); */
+@import url(../css/TestBrowser.css);
+A:LINK {color: #63735A;}
+A:VISITED {color: #5A634A;}
+A:HOVER {font-size : 150%;}
+A:ACTIVE {
+	color: #7B8C73;
+	background-color : #63735A;
+}
+img {
+	border:none;
+}
+body {
+	color:#7B8C73;
+	background-color:Black;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+table {
+	background-color: transparent;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+table thead {
+	text-align:center;
+	font-size:20pt;
+	text-decoration:underline;
+	font-weight:bold;
+}
+table .heading {
+	color:Black;
+	background-color:#63735A;
+	font-size:12pt;
+	text-decoration:underline;
+	font-weight:bold;
+}
+table .subheading {
+	color:Black;
+	background-color:#63735A;
+	font-size:8pt;
+	text-decoration:underline;
+	font-weight:bold;
+}
+em {
+	font-style:italic;
+	font-size:125%;
+	text-decoration:underline;
+}
+hr {
+	color:#7B8C73;
+	background-color:#7B8C73;
+}
+.arrow {
+	color:Red;
+	font-size:200%;
+}
+.footer {
+	font-size: 10px;
+	font-family : "Times New Roman", Times, serif;
+	text-align : center;
+}
+.rss {
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+	background-color:#FF6600;
+	border:1px solid;
+	border-color:#FFCC99 #663300 #333300 #FF9966;
+	padding:0px 3px 0px 3px;
+	margin: 0px 0px 0px 0px;
+}

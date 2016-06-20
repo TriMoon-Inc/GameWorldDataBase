@@ -1,0 +1,10 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Glandatoo.log
+
+# DB Javascript files: Glandatoo.js
+url = "fans.freeworldonline.com/trimoon/js/marks/Glandatoo.js"
+output = "web/js/marks/Glandatoo.js"
+
+url = "fans.freeworldonline.com/trimoon/js/marks/Glandatoo-{Northern_Dunes_Of_Tourment,Northern_FireFlats,Devils_Mouth,Fire_Flats,Lilaci_City,Southern_Dunes_Of_Tourment}.js"
+output = "web/js/marks/Glandatoo-#1.js"

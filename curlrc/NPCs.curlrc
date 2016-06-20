@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-NPCs.log
+
+# DB Javascript files: NPCs.js
+url = "fans.freeworldonline.com/trimoon/js/npcs/{Interactive,Pets,Armour_Trader,Arrow_Trader,Artaxerces,Bow_Trader,Barbied,Breati,Butcher,Cam'Dar,Clamme,Clawtor,elron,Forkwar,Fulleath,Furioso,gulamok,halloc,Helm_Trader,Lily,Macery,Magicos,Necessi,Old_Stud,Parleath,Patch,Polearm_Trader,Potion_Trader,Spheratos,Spike,Staff_Trader,Sword_Trader,Tanus,Toxra,Voramot,Wanda,Zorloc}.js"
+output = "web/js/npcs/#1.js"

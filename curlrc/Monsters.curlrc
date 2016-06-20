@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Monsters.log
+
+# DB Javascript files: Monsters.js
+url = "fans.freeworldonline.com/trimoon/js/monsters/{Armoured_Ghoul,Bile_Lilem,Bunny,Cow,Chicken,Gartos,Giant_Tarantula,Huge_Wolf_Spider,Lava_Sprite,Mortack,Mountain_Bunny,Mud_Troll,Night_Mare,Rock_Golem,Sand_Golem,Sand_Troll,Taralac,Water_Spider,Water_Sprite,Wild_Horse,Wild_Pony,Worker_Wasp}.js"
+output = "web/js/monsters/#1.js"

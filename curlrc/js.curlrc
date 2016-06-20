@@ -1,0 +1,7 @@
+# General Javascript files
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-js.log
+
+url = "fans.freeworldonline.com/trimoon/js/{LoadScripts,SolarSystem,TestBrowser}.js"
+output = "web/js/#1.js"

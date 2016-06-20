@@ -1,0 +1,7 @@
+# General Image files
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-images.log
+
+url = "fans.freeworldonline.com/trimoon/images/{Tri-Moon.gif,Tri-Moon.ico}"
+output = "web/images/#1"

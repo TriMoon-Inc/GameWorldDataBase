@@ -1,0 +1,29 @@
+config = "curlrc/main.curlrc"
+referer = "http://fans.freeworldonline.com/trimoon/;auto"
+header = "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0"
+header = "Accept: */*"
+header = "Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3"
+header = "DNT: 1"
+header = "Connection: keep-alive"
+header = "Pragma: no-cache"
+header = "Cache-Control: no-cache"
+stderr = log/fetch-Ratings.log
+
+# Ratings
+# http://web.archive.org/web/form-submit.jsp?type=prefixquery&url=http://www.trimoon.demon.nl/policies/
+
+# ICRA
+url = "http://web.archive.org/web/20060308172920im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif"
+output = "web/images/en_aw_88x31.gif"
+
+# WebUrbia
+url = "http://web.archive.org/web/20060308172920im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif"
+output = "web/images/WebUrbia-0a.gif"
+url = "http://stlplaces.com/weburbia/weburbia.rat"
+output = "web/weburbia.rat"
+
+# SafeSurf
+url = "http://www.safesurf.com/logos/ssurf.gif"
+output = "web/images/ssurf.gif"
+url = "http://www.safesurf.com/logos/safeadlt.gif"
+output = "web/images/safeadlt.gif"

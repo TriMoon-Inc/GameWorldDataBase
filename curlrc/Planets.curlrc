@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Planets.log
+
+# DB Javascript files: Planets.js
+url = "fans.freeworldonline.com/trimoon/js/maps/{Other,Omus_Prime,Glandatoo,Seregor,Orin,Talos,Themus,Dacas,Micha,Ryci,Mirra,Creti}.js"
+output = "web/js/maps/#1.js"

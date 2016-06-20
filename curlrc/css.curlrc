@@ -1,0 +1,7 @@
+# CSS files
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-css.log
+
+url = "fans.freeworldonline.com/trimoon/css/{Styles,Styles_DB,TestBrowser,Styles_statcalc}.css"
+output = "web/css/#1.css"

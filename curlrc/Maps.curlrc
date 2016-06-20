@@ -1,0 +1,36 @@
+# DB Image files: Maps
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Maps.log
+
+# template
+# map files are loaded from js/Planets.js
+# maps/mapname
+#url = "fans.freeworldonline.com/trimoon/maps/map_{}{,_small}.png"
+#output = "web/maps/map_#1#2.png"
+
+# Main maps.
+url = "fans.freeworldonline.com/trimoon/maps/map_{SolarSystem,back_small}.png"
+output = "web/maps/map_#1.png"
+
+# maps/Other.js
+url = "fans.freeworldonline.com/trimoon/maps/map_{Tutorial,BarterTown,Moon}{,_small}.png"
+output = "web/maps/map_#1#2.png"
+
+# maps/Omus_Prime.js
+url = "fans.freeworldonline.com/trimoon/maps/map_{OmusPrime}_[1-9]{,_small}.png"
+output = "web/maps/map_#1_#2#3.png"
+
+# maps/Glandatoo.js
+url = "fans.freeworldonline.com/trimoon/maps/map_{Glandatoo}_[1-3]_[1-3]{,_small}.png"
+output = "web/maps/map_#1_#2_#3#4.png"
+
+# maps/Seregor.js
+url = "fans.freeworldonline.com/trimoon/maps/map_{Seregor}_[1-5]_[1-6]{,_small}.png"
+output = "web/maps/map_#1_#2_#3#4.png"
+url = "fans.freeworldonline.com/trimoon/maps/map_{Noruth_City,Maze}{,_small}.png"
+output = "web/maps/map_#1#2.png"
+
+# maps/Themus.js
+url = "fans.freeworldonline.com/trimoon/maps/map_{Themus}{,_small}.png"
+output = "web/maps/map_#1#2.png"

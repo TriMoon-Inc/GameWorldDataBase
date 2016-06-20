@@ -1,0 +1,10 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Seregor.log
+
+# DB Javascript files: Seregor.js
+url = "fans.freeworldonline.com/trimoon/js/marks/Seregor.js"
+output = "web/js/marks/Seregor.js"
+
+url = "fans.freeworldonline.com/trimoon/js/marks/Seregor-{Faragor_Mountain,Muirdach,Western_Orc_Woods,Northern_Orc_Woods,Belrith,West_Haunted_Woods,East_Haunted_Woods,Liyon_Valley,South_Orc_Woods,Eastern_Orc_Woods,Northern_Galen_Woods,Eastern_Galen_Woods,Alamon_Pass,Taleron,Noruth_City,Keep_Basement}.js"
+output = "web/js/marks/Seregor-#1.js"

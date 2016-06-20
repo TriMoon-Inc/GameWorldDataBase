@@ -1,0 +1,49 @@
+/*
+ (C)2004 TriMoon Inc.
+ Author: Tri_Moon <tripple_moon_3m@yahoo.com>
+ FreeWorld Stat Calculator Style-Sheet.
+
+ This work is licensed under a Creative Commons License !
+ See: http://creativecommons.org/licenses/by-nc-nd/2.0/
+*/
+@import url(Styles.css);
+table#StatCalculator {
+	background-image : url(maps/map_back_small.png);
+}
+caption {
+	font-family : "Times New Roman", Times, serif;
+	font-size : 150%;
+	font-style : italic;
+	font-weight : bold;
+	text-decoration : underline blink;
+}
+thead {
+	font-family : "Times New Roman", Times, serif;
+	font-size : 150%;
+}
+tbody {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 75%;
+}
+.QuickLink {
+	font-size : 150%;
+	font-family : "Script MT Bold";
+}
+.level {
+	font-size : 125%;
+	color : White;
+}
+.plusminus {
+	color: Green;
+	text-align: center;
+	cursor: pointer;
+}
+.stat {
+	color: Yellow;
+	text-align: Left;
+}
+.statval {
+	color: White;
+	text-align: Right;
+	width : 50px;
+}

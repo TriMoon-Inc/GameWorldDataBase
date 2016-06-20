@@ -1,0 +1,7 @@
+config = "curlrc/main.curlrc"
+config = "curlrc/headers.curlrc"
+stderr = log/fetch-Items.log
+
+# DB Javascript files: Items.js
+url = "fans.freeworldonline.com/trimoon/js/items/{Misc,Armor,Arrow,Axe,Bolt,Bow,CrossBow,Dagger,Food,Hammer,Helm,Mace,Pet,Polearm,Potion,Powerband,Scroll,Shield,Staff,Sword,Wand_Charge,Wand}.js"
+output = "web/js/items/#1.js"

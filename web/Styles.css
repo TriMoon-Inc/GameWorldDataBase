@@ -1,0 +1,197 @@
+/*
+	(C)2004 TriMoon Inc.
+	Author: Tri_Moon <tripple_moon_3m@yahoo.com>
+	Mainpage.
+	
+	This work is licensed under a Creative Commons License !
+	See: http://creativecommons.org/licenses/by-nc-nd/2.0/
+*/
+body {
+    background-color: #000000;
+    color: #7b8c73;
+    font-family: Georgia, sans-serif;
+    font-size: 100%;
+}
+img {
+    border: 0;
+}
+h1 {
+    font-size: 2.0em;
+}
+p, td, blockquote { 
+    font-size: 1.0em; 
+}
+pre, code, kbd, tt {
+    font-family: monospace;
+}
+/*
+a {
+    color: #000000;
+}
+a:active {
+    color: #3c3c3c;
+}
+a:hover {
+    color: #3c3c3c;
+}
+a:visited {
+    color: #000000;
+}
+*/
+
+/* Title */
+#top_title {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid #3e463a;
+}
+#journal_title {
+    background-color: #000000;
+    color: #7b8c73;
+    text-align: center;
+}
+#speck {
+    background-color: #000000;
+    border-right: 1px solid #3e463a;
+    height: 100%;
+    width: 21px;
+}
+.short_entry {
+    font-size: .8em;
+    text-align: justify;
+}
+.short_entry_meta {
+    color: #f8f9f7;
+}
+.full_entry {
+    background-color: #000000;
+    padding: 10px;
+    width: 100%;
+}
+.full_entry_userpic {
+    font-size: .8em;
+    border: 1px solid #3e463a;
+    padding: 3px;
+}
+.heading_bar {
+    background-color: #63735a;
+    border: 1px solid #323a2d;
+    color: #000000;
+    margin-top: .2em;
+    padding: 5px;
+    width: 100%;
+}
+
+.heading_bar a {
+    color: #0000ff;
+}
+.heading_bar a:active {
+    color: #7979ff;
+}
+.heading_bar a:hover {
+    color: #7979ff;
+}
+.heading_bar a:visited {
+    color: #000088;
+}
+
+/* Side bars */
+#sidebar {
+    background-color: #33432a;
+    border-right: 1px solid #3e463a;
+    border-top: 1px solid #3e463a;
+    max-width: 155px;
+    text-align: center;
+    width: 155px;
+}
+.sidebar_box {
+    font-size: 0.8em;
+    width: 100%;
+}
+.sidebar_box_contents {
+    background-color: #5a634a;
+    border-bottom: 1px solid #3e463a;
+    border-top: 1px solid #3e463a;
+    color: #7b8c73;
+    padding: 5px;
+}
+.sidebar_box_contents li {
+    margin-left: -25px;
+    font-size: .9em;
+}
+.sidebar_box_header {
+    background-color: #1c1f17;
+    border-top: 1px solid #3e463a;
+    color: #424b3d;
+    text-align: left;
+    padding: 5px;
+}
+#sidebar_userpic {
+    text-align: center;
+}
+#sidebar_navigation {
+    text-align: left;
+}
+#sidebar_linklist {
+    text-align: left;
+}
+#sidebar_blurb {
+    text-align: justify;
+}
+#sidebar_summary {
+    text-align: left;
+}
+#subtitles {
+    border: 1px solid #3e463a;
+    width: 90%;
+    text-align: left;
+}
+#sidebar_title {
+    background-color: #33432a;
+    border-right: 1px solid #3e463a;
+    color: #63735a;
+    text-align: center;
+    width: 155px;
+}
+#main_title {
+    background-color: #33432a;
+    color: #000000;
+    text-align: center;
+}
+#main {
+    border: 1px solid #3e463a;
+    width: 95%;
+}
+#content {
+    background-color: #000000;
+    border-top: 1px solid #3e463a;
+    color: #7b8c73;
+    text-align: left;
+    width: 90%;
+}
+#top_of_page, #server_sig{
+    background-color: #33432a;
+    border-top: 1px solid #3e463a;
+    color: #000000;
+    padding: 5px;
+}
+#top_of_page {
+    width: 155px;
+}
+#server_sig {
+    text-align: right;
+    width: 95%;
+}
+#multiform_form {
+    padding: 3px;
+}
+.calendar_day {
+    border-bottom: 1px solid #3e463a;
+    border-right: 1px solid #3e463a;
+    width: 14%;
+}
+.calendar_day .day {
+    font-size: .9em;
+}
