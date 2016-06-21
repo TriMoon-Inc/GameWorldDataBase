@@ -310,10 +310,6 @@ function genFooter(){
 			DomObj[0].appendChild( DomObj[1] );
 				// Create a col.
 				DomObj[1] = document.createElement("col");
-				DomObj[1].setAttribute("width", "125px");
-			DomObj[0].appendChild( DomObj[1] );
-				// Create a col.
-				DomObj[1] = document.createElement("col");
 				DomObj[1].setAttribute("width", "80px");
 			DomObj[0].appendChild( DomObj[1] );
 				// Create a col.
@@ -335,146 +331,6 @@ function genFooter(){
 				if(noDOM2HTML)	oTR = document.createElement("tr");
 				else		oTR = oTBody.insertRow(-1);
 				oTR.style.verticalAlign = "top";
-					// Create a Table Cell.
-					if(noDOM2HTML)	oTD = document.createElement("td");
-					else		oTD = oTR.insertCell(-1);
-<!-- Start of StatCounter Code -->
-if(true){
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.statcounter.com");
-							// Create an img element.
-							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://my.statcounter.com/images/counters/small_ad.gif");
-							DomObj[1].setAttribute("alt", "StatCounter - Free Web Tracker and Counter");
-							DomObj[1].setAttribute("title", "StatCounter - Free Web Tracker and Counter");
-							if(isIE4||isIE5||isIE6){
-								DomObj[1].width = 100;
-								DomObj[1].height = 26;
-							};
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						// Text
-						DomObj[0] = document.createTextNode("Visitors Since 07/11/04");
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://my.statcounter.com/project/standard/stats.php?project_id=541068&guest=1");
-							var sCurLoc, tmpImg = new Image();
-							sCurLoc = document.location.protocol + "//" + document.location.host;
-							sCurLoc += document.location.pathname.substring(0, 1+document.location.pathname.lastIndexOf('/'));
-							sCurLoc += Universe.Control.MakeSearch();
-							sText = "http://c4.statcounter.com/t.php?";
-							sText += "sc_project=" + 541068;
-							sText += "&resolution=" + screen.width;
-							sText += "&camefrom=" + escape(document.referrer.substring(0, 150));
-							sText += "&u=" + escape(sCurLoc);
-							sText += "&t=" + escape(document.title.substring(0, 150));
-							sText += "&java=1";
-							sText += "&sc_random=" + Math.random();
-//							sText = "http://c4.statcounter.com/counter.php?sc_project=541068&amp;amp;java=0"
-							tmpImg.src = sText;
-							// Create an img element.
-							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", sText);
-							DomObj[1].setAttribute("alt", "StatCounter - Click for stats");
-							DomObj[1].setAttribute("title", "StatCounter - Click for stats");
-							if(isIE4||isIE5||isIE6){
-								DomObj[1].width = 58;
-								DomObj[1].height = 17;
-							};
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-/*
-							// Create an script element. (var init)
-							DomObj[0] = document.createElement("script");
-							DomObj[0].setAttribute("type", "text/javascript");
-								DomObj[1] = document.createTextNode("<!--");
-							DomObj[0].appendChild( DomObj[1] );
-								DomObj[1] = document.createTextNode("var sc_project=541068;");
-							DomObj[0].appendChild( DomObj[1] );
-								DomObj[1] = document.createTextNode("var sc_partition=3;");
-							DomObj[0].appendChild( DomObj[1] );
-								DomObj[1] = document.createTextNode("//-->");
-							DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-							// Create an script element. (counter script)
-							DomObj[0] = document.createElement("script");
-							DomObj[0].setAttribute("type", "text/javascript");
-//							DomObj[0].setAttribute("src", "http://www.statcounter.com/counter/frames.js");
-							DomObj[0].setAttribute("src", "http://www.statcounter.com/counter/counter_xhtml.js");
-					oTD.appendChild( DomObj[0] );
-*/
-<!-- End of StatCounter Code -->
-};
-var tmpWCImage1 = new Image(), tmpWCImage2 = new Image();
-tmpWCImage1.src = "http://counter.digits.com/wc/-d/6/-r/-z/-c/4/-f/7B8C73/-b/000000/demon_FW_Maps_all";
-tmpWCImage2.src = "http://counter.digits.com/wc/-d/6/-r/-z/-c/4/-f/7B8C73/-b/000000/demon_FW_Maps";
-<!-- Start of WebCounter Code -->
-if(false){
-						// WebCounter
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.digits.com/");
-							// Create an img element.
-							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.digits.com/thumbnail/wc-01.gif");
-							DomObj[1].setAttribute("alt", "WebCounter");
-							DomObj[1].setAttribute("title", "WebCounter");
-							DomObj[1].setAttribute("width", "75%");
-							if(isIE4||isIE5||isIE6){
-								DomObj[1].width = 94;
-								DomObj[1].height = 26;
-							};
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						// Text
-						DomObj[0] = document.createTextNode("Visitors Since 07/11/04");
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-							// Counter width = #digits x 15, use -n to test changes on page without incrementing
-							sText = "/-d/6/-r/-z/-c/4/-f/7B8C73/-b/000000";
-//							sText += "/-n";
-							// Create an img element. (overall counter)
-							DomObj[0] = document.createElement("img");
-							DomObj[0].setAttribute("src", "http://counter.digits.com/wc"+sText+"/demon_FW_Maps_all");
-							DomObj[0].setAttribute("alt", "Counter");
-							DomObj[0].setAttribute("title", "Counter");
-							DomObj[0].setAttribute("width", "90px");
-							DomObj[0].setAttribute("height", "20px");
-							if(isIE4||isIE5||isIE6){
-								DomObj[0].width = 90;
-								DomObj[0].height = 20;
-							};
-					oTD.appendChild( DomObj[0] );
-							// Create an img element. (Unique counter)
-							DomObj[0] = document.createElement("img");
-							DomObj[0].setAttribute("src", "http://counter.digits.com/wc"+sText+"/demon_FW_Maps");
-							DomObj[0].setAttribute("alt", "Counter");
-							DomObj[0].setAttribute("title", "Counter");
-							DomObj[0].setAttribute("width", "90px");
-							DomObj[0].setAttribute("height", "20px");
-							if(isIE4||isIE5||isIE6){
-								DomObj[0].width = 90;
-								DomObj[0].height = 20;
-							};
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						// Text
-						DomObj[0] = document.createTextNode("Unique Visitors");
-					oTD.appendChild( DomObj[0] );
-};
-<!-- End of WebCounter Code -->
-				// Add Table Cell to Table Row.
-				if(noDOM2HTML)	oTR.appendChild( oTD );
 					// Create a Table Cell.
 					if(noDOM2HTML)	oTD = document.createElement("td");
 					else		oTD = oTR.insertCell(-1);
@@ -508,26 +364,6 @@ if(false){
 						DomObj[0].appendChild( DomObj[1] );
 					oTD.appendChild( DomObj[0] );
 						DomObj[0] = document.createTextNode(".");
-					oTD.appendChild( DomObj[0] );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						DomObj[0] = document.createTextNode("Read our ");
-					oTD.appendChild( DomObj[0] );
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/");
-							DomObj[1] = document.createTextNode("Policies");
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-						DomObj[0] = document.createTextNode(" and especialy ");
-					oTD.appendChild( DomObj[0] );
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/#disclaimer");
-							DomObj[1] = document.createTextNode("Disclaimer");
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
-						DomObj[0] = document.createTextNode(" !");
 					oTD.appendChild( DomObj[0] );
 				// Add Table Cell to Table Row.
 				if(noDOM2HTML)	oTR.appendChild( oTD );
@@ -585,19 +421,6 @@ if(false){
 					oTD.appendChild( DomObj[0] );
 					// A Line Break.
 					oTD.appendChild( oBR.cloneNode(false) );
-					// A Line Break.
-					oTD.appendChild( oBR.cloneNode(false) );
-						// Create an anchor element.
-						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://del.icio.us/trimoon");
-						DomObj[0].setAttribute("title", "My bookmarks on del.icio.us");
-							// Create a span element.
-							DomObj[1] = document.createElement("span");
-							DomObj[1].className = "rss";
-								DomObj[2] = document.createTextNode("RSS: My Bookmarks");
-							DomObj[1].appendChild( DomObj[2] );
-						DomObj[0].appendChild( DomObj[1] );
-					oTD.appendChild( DomObj[0] );
 				// Add Table Cell to Table Row.
 				if(noDOM2HTML)	oTR.appendChild( oTD );
 					// Create a Table Cell.
@@ -605,10 +428,9 @@ if(false){
 					else		oTD = oTR.insertCell(-1);
 						// Create an anchor element.
 						DomObj[0] = document.createElement("a");
-						DomObj[0].setAttribute("href", "http://www.trimoon.cloudns.eu/policies/#rating");
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/ICRA/en_aw_88x31.gif");
+							DomObj[1].setAttribute("src", "images/en_aw_88x31.gif");
 							DomObj[1].setAttribute("alt", "[ RSACi ]");
 							DomObj[1].setAttribute("title", "[ RSACi ]");
 							DomObj[1].setAttribute("align", "middle");
@@ -623,7 +445,7 @@ if(false){
 						DomObj[0].appendChild( oBR.cloneNode(false) );
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/SafeSurf/ssurf.gif");
+							DomObj[1].setAttribute("src", "images/ssurf.gif");
 							DomObj[1].setAttribute("alt", "[ SafeSurf ]");
 							DomObj[1].setAttribute("title", "[ SafeSurf ]");
 							DomObj[1].setAttribute("align", "middle");
@@ -638,7 +460,7 @@ if(false){
 						DomObj[0].appendChild( oBR.cloneNode(false) );
 							// Create an img element.
 							DomObj[1] = document.createElement("img");
-							DomObj[1].setAttribute("src", "http://www.trimoon.cloudns.eu/policies/WebUrbia/WebUrbia-0a.gif");
+							DomObj[1].setAttribute("src", "images/WebUrbia-0a.gif");
 							DomObj[1].setAttribute("alt", "[ Safe For Kids ]");
 							DomObj[1].setAttribute("title", "[ Safe For Kids ]");
 							DomObj[1].setAttribute("align", "middle");
