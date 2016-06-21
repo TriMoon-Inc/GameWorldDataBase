@@ -1,0 +1,216 @@
+* timeout on name lookup is not supported
+*   Trying 207.241.225.186...
+* Connected to web.archive.org (207.241.225.186) port 80 (#0)
+> GET /web/20060308172920im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif HTTP/1.1
+> Host: web.archive.org
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 302 Found
+< Server: Tengine/2.1.0
+< Date: Sun, 19 Jun 2016 21:40:04 GMT
+< Content-Type: image/gif
+< Content-Length: 0
+< Connection: keep-alive
+< set-cookie: wayback_server=34; Domain=archive.org; Path=/; Expires=Tue, 19-Jul-16 21:40:04 GMT;
+< Location: /web/20050227193508im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif
+< Link: <http://www.trimoon.demon.nl:80/policies/ICRA/en_aw_88x31.gif>; rel="original"
+< X-Archive-Wayback-Perf: {"IndexLoad":107,"IndexQueryTotal":107,"Total":108}
+< X-Archive-Playback: 0
+< X-Page-Cache: MISS
+< 
+* Connection #0 to host web.archive.org left intact
+* Issue another request to this URL: 'http://web.archive.org/web/20050227193508im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif'
+* Found bundle for host web.archive.org: 0xc2cbd0 [can pipeline]
+* Re-using existing connection! (#0) with host web.archive.org
+* Connected to web.archive.org (207.241.225.186) port 80 (#0)
+> GET /web/20050227193508im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif HTTP/1.1
+> Host: web.archive.org
+> Accept-Encoding: deflate, gzip
+> Referer: http://web.archive.org/web/20060308172920im_/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 200 OK
+< Server: Tengine/2.1.0
+< Date: Sun, 19 Jun 2016 21:40:05 GMT
+< Content-Type: image/gif
+< Content-Length: 1376
+< Connection: keep-alive
+< set-cookie: wayback_server=34; Domain=archive.org; Path=/; Expires=Tue, 19-Jul-16 21:40:04 GMT;
+< Memento-Datetime: Sun, 27 Feb 2005 19:35:08 GMT
+< Link: <http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif>; rel="original", <http://web.archive.org/web/timemap/link/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif>; rel="timemap"; type="application/link-format", <http://web.archive.org/web/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif>; rel="timegate", <http://web.archive.org/web/20050227193508/http://www.trimoon.demon.nl/policies/ICRA/en_aw_88x31.gif>; rel="first last memento"; datetime="Sun, 27 Feb 2005 19:35:08 GMT"
+< X-Archive-Orig-last-modified: Sat, 02 Oct 2004 23:28:44 GMT
+< X-Archive-Orig-content-type: image/gif
+< X-Archive-Orig-date: Sun, 27 Feb 2005 19:34:59 GMT
+< X-Archive-Orig-content-length: 1376
+< X-Archive-Orig-server: thttpd/1.00.disbu
+< X-Archive-Wayback-Perf: {"IndexLoad":374,"IndexQueryTotal":374,"Total":707,"WArcResource":331}
+< X-Archive-Playback: 1
+< X-Page-Cache: MISS
+< 
+{ [239 bytes data]
+############                                                              17.4%######################################################################## 100.0%* Connection #0 to host web.archive.org left intact
+
+* Found bundle for host web.archive.org: 0xc2cbd0 [can pipeline]
+* Re-using existing connection! (#0) with host web.archive.org
+* Connected to web.archive.org (207.241.225.186) port 80 (#0)
+> GET /web/20060308172920im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif HTTP/1.1
+> Host: web.archive.org
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 302 Found
+< Server: Tengine/2.1.0
+< Date: Sun, 19 Jun 2016 21:40:05 GMT
+< Content-Type: image/gif
+< Content-Length: 0
+< Connection: keep-alive
+< set-cookie: wayback_server=34; Domain=archive.org; Path=/; Expires=Tue, 19-Jul-16 21:40:05 GMT;
+< Location: /web/20050228031145im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif
+< Link: <http://www.trimoon.demon.nl:80/policies/WebUrbia/WebUrbia-0a.gif>; rel="original"
+< X-Archive-Wayback-Perf: {"IndexLoad":129,"IndexQueryTotal":129,"Total":131}
+< X-Archive-Playback: 0
+< X-Page-Cache: MISS
+< 
+* Connection #0 to host web.archive.org left intact
+* Issue another request to this URL: 'http://web.archive.org/web/20050228031145im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif'
+* Found bundle for host web.archive.org: 0xc2cbd0 [can pipeline]
+* Re-using existing connection! (#0) with host web.archive.org
+* Connected to web.archive.org (207.241.225.186) port 80 (#0)
+> GET /web/20050228031145im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif HTTP/1.1
+> Host: web.archive.org
+> Accept-Encoding: deflate, gzip
+> Referer: http://web.archive.org/web/20060308172920im_/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 200 OK
+< Server: Tengine/2.1.0
+< Date: Sun, 19 Jun 2016 21:40:06 GMT
+< Content-Type: image/gif
+< Content-Length: 4618
+< Connection: keep-alive
+< set-cookie: wayback_server=34; Domain=archive.org; Path=/; Expires=Tue, 19-Jul-16 21:40:06 GMT;
+< Memento-Datetime: Mon, 28 Feb 2005 03:11:45 GMT
+< Link: <http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif>; rel="original", <http://web.archive.org/web/timemap/link/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif>; rel="timemap"; type="application/link-format", <http://web.archive.org/web/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif>; rel="timegate", <http://web.archive.org/web/20050228031145/http://www.trimoon.demon.nl/policies/WebUrbia/WebUrbia-0a.gif>; rel="first last memento"; datetime="Mon, 28 Feb 2005 03:11:45 GMT"
+< X-Archive-Orig-last-modified: Sat, 02 Oct 2004 23:28:58 GMT
+< X-Archive-Orig-content-type: image/gif
+< X-Archive-Orig-date: Mon, 28 Feb 2005 03:11:35 GMT
+< X-Archive-Orig-content-length: 4618
+< X-Archive-Orig-server: thttpd/1.00.disbu
+< X-Archive-Wayback-Perf: {"IndexLoad":211,"IndexQueryTotal":211,"Total":283,"WArcResource":70}
+< X-Archive-Playback: 1
+< X-Page-Cache: MISS
+< 
+{ [224 bytes data]
+###                                                                        4.9%######################################################################## 100.0%* Connection #0 to host web.archive.org left intact
+
+* timeout on name lookup is not supported
+*   Trying 192.185.36.101...
+* Connected to stlplaces.com (192.185.36.101) port 80 (#1)
+> GET /weburbia/weburbia.rat HTTP/1.1
+> Host: stlplaces.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.10.1
+< Date: Sun, 19 Jun 2016 21:40:06 GMT
+< Content-Type: text/plain
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Last-Modified: Wed, 18 Nov 2009 13:38:44 GMT
+< Vary: User-Agent
+< Content-Encoding: gzip
+< 
+{ [431 bytes data]
+######################################################################## 100.0%######################################################################## 100.0%* Connection #1 to host stlplaces.com left intact
+
+* timeout on name lookup is not supported
+*   Trying 65.110.89.132...
+* Connected to www.safesurf.com (65.110.89.132) port 80 (#2)
+> GET /logos/ssurf.gif HTTP/1.1
+> Host: www.safesurf.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 200 OK
+< Content-Type: image/gif
+< Last-Modified: Sat, 27 Aug 2005 23:59:01 GMT
+< Accept-Ranges: bytes
+< ETag: "eb30244c63abc51:0"
+< Server: Microsoft-IIS/7.5
+< X-Powered-By: ASP.NET
+< Date: Sun, 19 Jun 2016 21:40:06 GMT
+< Content-Length: 1241
+< 
+{ [1164 bytes data]
+###################################################################       93.8%######################################################################## 100.0%* Connection #2 to host www.safesurf.com left intact
+
+* Found bundle for host www.safesurf.com: 0xc2d150 [can pipeline]
+* Re-using existing connection! (#2) with host www.safesurf.com
+* Connected to www.safesurf.com (65.110.89.132) port 80 (#2)
+> GET /logos/safeadlt.gif HTTP/1.1
+> Host: www.safesurf.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> 
+< HTTP/1.1 200 OK
+< Content-Type: image/gif
+< Last-Modified: Sat, 27 Aug 2005 23:58:57 GMT
+< Accept-Ranges: bytes
+< ETag: "8b1f8e4963abc51:0"
+< Server: Microsoft-IIS/7.5
+< X-Powered-By: ASP.NET
+< Date: Sun, 19 Jun 2016 21:40:06 GMT
+< Content-Length: 1182
+< 
+{ [1164 bytes data]
+######################################################################    98.5%######################################################################## 100.0%* Connection #2 to host www.safesurf.com left intact
+

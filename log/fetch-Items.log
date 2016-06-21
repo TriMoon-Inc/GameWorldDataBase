@@ -1,0 +1,792 @@
+
+[1/22]: fans.freeworldonline.com/trimoon/js/items/Misc.js --> web/js/items/Misc.js
+* timeout on name lookup is not supported
+*   Trying 146.255.45.1...
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Misc.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:29 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "298f-4e5044ccc4a96-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:29 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 2690
+< Keep-Alive: timeout=5, max=100
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1005 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[2/22]: fans.freeworldonline.com/trimoon/js/items/Armor.js --> web/js/items/Armor.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Armor.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "3ac5-4e5044cc3c31d-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 2065
+< Keep-Alive: timeout=5, max=99
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[3/22]: fans.freeworldonline.com/trimoon/js/items/Arrow.js --> web/js/items/Arrow.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Arrow.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "13a7-4e5044cc3c2ff-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 985
+< Keep-Alive: timeout=5, max=98
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [985 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[4/22]: fans.freeworldonline.com/trimoon/js/items/Axe.js --> web/js/items/Axe.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Axe.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "118e-4e5044cc570b2-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 1239
+< Keep-Alive: timeout=5, max=97
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[5/22]: fans.freeworldonline.com/trimoon/js/items/Bolt.js --> web/js/items/Bolt.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Bolt.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "c13-4e5044cc5a38a-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 678
+< Keep-Alive: timeout=5, max=96
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [678 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[6/22]: fans.freeworldonline.com/trimoon/js/items/Bow.js --> web/js/items/Bow.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Bow.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "7621-4e5044cc75514-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 3043
+< Keep-Alive: timeout=5, max=95
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[7/22]: fans.freeworldonline.com/trimoon/js/items/CrossBow.js --> web/js/items/CrossBow.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/CrossBow.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "7ca5-4e5044cc77c48-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 2940
+< Keep-Alive: timeout=5, max=94
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[8/22]: fans.freeworldonline.com/trimoon/js/items/Dagger.js --> web/js/items/Dagger.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Dagger.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "7ef-4e5044cc86e4d-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 710
+< Keep-Alive: timeout=5, max=93
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [710 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[9/22]: fans.freeworldonline.com/trimoon/js/items/Food.js --> web/js/items/Food.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Food.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "1477-4e5044cc8c072-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 1141
+< Keep-Alive: timeout=5, max=92
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[10/22]: fans.freeworldonline.com/trimoon/js/items/Hammer.js --> web/js/items/Hammer.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Hammer.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "febf-4e5044cca4702-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 4883
+< Keep-Alive: timeout=5, max=91
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[11/22]: fans.freeworldonline.com/trimoon/js/items/Helm.js --> web/js/items/Helm.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Helm.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:30 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "1a3a-4e5044cc9dd89-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:30 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 1234
+< Keep-Alive: timeout=5, max=90
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[12/22]: fans.freeworldonline.com/trimoon/js/items/Mace.js --> web/js/items/Mace.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Mace.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:37 GMT
+< ETag: "f792-4e5044ccc2770-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 4334
+< Keep-Alive: timeout=5, max=89
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[13/22]: fans.freeworldonline.com/trimoon/js/items/Pet.js --> web/js/items/Pet.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Pet.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "117b-4e5044ccd7f2e-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 1064
+< Keep-Alive: timeout=5, max=88
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[14/22]: fans.freeworldonline.com/trimoon/js/items/Polearm.js --> web/js/items/Polearm.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Polearm.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "116f-4e5044ccd8aeb-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 963
+< Keep-Alive: timeout=5, max=87
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [963 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[15/22]: fans.freeworldonline.com/trimoon/js/items/Potion.js --> web/js/items/Potion.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Potion.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "965-4e5044cce987a-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 748
+< Keep-Alive: timeout=5, max=86
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [748 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[16/22]: fans.freeworldonline.com/trimoon/js/items/Powerband.js --> web/js/items/Powerband.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Powerband.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "dd8-4e5044ccf05d1-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 731
+< Keep-Alive: timeout=5, max=85
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [731 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[17/22]: fans.freeworldonline.com/trimoon/js/items/Scroll.js --> web/js/items/Scroll.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Scroll.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "b43-4e5044ccfc53f-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 679
+< Keep-Alive: timeout=5, max=84
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [679 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[18/22]: fans.freeworldonline.com/trimoon/js/items/Shield.js --> web/js/items/Shield.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Shield.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "bf0-4e5044cd0135d-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 882
+< Keep-Alive: timeout=5, max=83
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [882 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[19/22]: fans.freeworldonline.com/trimoon/js/items/Staff.js --> web/js/items/Staff.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Staff.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "d01-4e5044cd1114e-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 884
+< Keep-Alive: timeout=5, max=82
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [884 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[20/22]: fans.freeworldonline.com/trimoon/js/items/Sword.js --> web/js/items/Sword.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Sword.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "4763-4e5044cd16b21-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 2595
+< Keep-Alive: timeout=5, max=81
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[21/22]: fans.freeworldonline.com/trimoon/js/items/Wand_Charge.js --> web/js/items/Wand_Charge.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Wand_Charge.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:31 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "5cb-4e5044cd23646-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:31 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 520
+< Keep-Alive: timeout=5, max=80
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [520 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[22/22]: fans.freeworldonline.com/trimoon/js/items/Wand.js --> web/js/items/Wand.js
+* Found bundle for host fans.freeworldonline.com: 0xc2e9b0 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/js/items/Wand.js HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:32 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:38 GMT
+< ETag: "4c51-4e5044cd26520-gzip"
+< Accept-Ranges: bytes
+< Cache-Control: max-age=604800
+< Expires: Sun, 26 Jun 2016 21:39:32 GMT
+< Vary: Accept-Encoding
+< Content-Encoding: gzip
+< Content-Length: 2296
+< Keep-Alive: timeout=5, max=79
+< Connection: Keep-Alive
+< Content-Type: application/javascript
+< 
+{ [1006 bytes data]
+###############################                                           43.8%######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+

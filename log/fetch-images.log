@@ -1,0 +1,68 @@
+
+[1/2]: fans.freeworldonline.com/trimoon/images/Tri-Moon.gif --> web/images/Tri-Moon.gif
+* timeout on name lookup is not supported
+*   Trying 146.255.45.1...
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/images/Tri-Moon.gif HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:28 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:26 GMT
+< ETag: "6eb-4e5044c1f4589"
+< Accept-Ranges: bytes
+< Content-Length: 1771
+< Cache-Control: max-age=5184000
+< Expires: Thu, 18 Aug 2016 21:39:28 GMT
+< Keep-Alive: timeout=5, max=100
+< Connection: Keep-Alive
+< Content-Type: image/gif
+< 
+{ [1070 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
+
+[2/2]: fans.freeworldonline.com/trimoon/images/Tri-Moon.ico --> web/images/Tri-Moon.ico
+* Found bundle for host fans.freeworldonline.com: 0x237dc70 [can pipeline]
+* Re-using existing connection! (#0) with host fans.freeworldonline.com
+* Connected to fans.freeworldonline.com (146.255.45.1) port 80 (#0)
+> GET /trimoon/images/Tri-Moon.ico HTTP/1.1
+> Host: fans.freeworldonline.com
+> Accept-Encoding: deflate, gzip
+> Referer: http://fans.freeworldonline.com/trimoon/
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+> Accept: */*
+> Accept-Language: en-US,nl;q=0.8,tr;q=0.5,en;q=0.3
+> DNT: 1
+> Connection: keep-alive
+> Pragma: no-cache
+> Cache-Control: no-cache
+> X-Note: Trying to make a backup. I forgot my info, so please send needed info for ftp access to freeworld@trimoon.cloudn.eu
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 19 Jun 2016 21:39:28 GMT
+< Server: Apache
+< Last-Modified: Wed, 28 Aug 2013 16:15:26 GMT
+< ETag: "ebe-4e5044c20b0cb"
+< Accept-Ranges: bytes
+< Content-Length: 3774
+< Cache-Control: max-age=2592000
+< Expires: Tue, 19 Jul 2016 21:39:28 GMT
+< Keep-Alive: timeout=5, max=99
+< Connection: Keep-Alive
+< Content-Type: image/x-icon
+< 
+{ [1068 bytes data]
+######################################################################## 100.0%* Connection #0 to host fans.freeworldonline.com left intact
+
